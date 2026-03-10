@@ -1,0 +1,1 @@
+"""Enterprise BI landscape generator."""

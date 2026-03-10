@@ -1,0 +1,97 @@
+{
+  "events": [
+    {
+      "action": "delete",
+      "external_id": "493b3598-c2a9-4445-be15-392a8ceaa3ca",
+      "name": "DZ-SBX Operations Field Ops Self-Service",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "68cc92be-bf10-4367-a2d7-3a4e785badfa",
+      "name": "DZ-SBX Operations Field Ops Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "813342fa-a069-4c7a-b257-4e50e6857aef",
+      "name": "DZ-SBX Operations Field Ops LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "3c927bf1-119a-456a-a46f-ba34d7077f21",
+      "name": "DZ-SBX Operations Support Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "b14eee87-4514-4306-99a6-92b4521f7e54",
+      "name": "DZ-SBX Operations Support LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "57d238a4-cf57-4e4c-9a58-3b089dd01ce5",
+      "name": "DZ-SBX Operations Support EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "b208a97b-4875-42bf-a47f-8d28334c0202",
+      "name": "DZ-SBX Operations Network LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "63a81588-9c7f-48ba-a622-49153db64c59",
+      "name": "DZ-SBX Operations Network EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "08ceaeea-b287-47f8-beef-8da84a61b51f",
+      "name": "DZ-SBX Operations Network North America",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "7cbe62f7-f135-447a-b20d-69424fc6c864",
+      "name": "DZ-SBX Finance Shared Services Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "1e1ac388-c801-4407-a511-369f8cb40ce9",
+      "name": "DZ-SBX Finance Shared Services LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "71831b79-1dab-4faa-983f-ec5ddad0d449",
+      "name": "DZ-SBX Finance FP&A LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "8bf43601-8cb3-42ca-b8bd-169de42a5393",
+      "name": "DZ-SBX Finance FP&A EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "ba7e535d-62ea-4238-980e-950d39382f5e",
+      "name": "DZ-SBX Finance Close EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "delete",
+      "external_id": "aa02c7a7-5736-4bad-bbc7-b394e55dc4d8",
+      "name": "DZ-SBX Finance Close North America",
+      "platform": "powerbi"
+    }
+  ],
+  "manifest_name": "enterprise-sandbox",
+  "objects": [],
+  "state_version": 1
+}

@@ -1,0 +1,3945 @@
+{
+  "events": [
+    {
+      "action": "create",
+      "external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "name": "DZ-SBX Finance Close North America",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "name": "DZ-SBX Finance Close EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "name": "DZ-SBX Finance FP&A EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "name": "DZ-SBX Finance FP&A LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "name": "DZ-SBX Finance Shared Services LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "name": "DZ-SBX Finance Shared Services Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "name": "DZ-SBX Operations Network North America",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "name": "DZ-SBX Operations Network EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "name": "DZ-SBX Operations Network LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "name": "DZ-SBX Operations Support EMEA",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "name": "DZ-SBX Operations Support LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7b67adc8-2cde-4aaa-a0b8-dea08722a436",
+      "name": "DZ-SBX Operations Support Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "name": "DZ-SBX Operations Field Ops LATAM",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "name": "DZ-SBX Operations Field Ops Ops",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "name": "DZ-SBX Operations Field Ops Self-Service",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0b22514a-af30-4417-9413-98cc04425dde",
+      "name": "Finance Close Insights v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7f7a8662-661d-49c9-8c5f-8f99b3949f96",
+      "name": "Finance Close Insights v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b19de203-753a-431c-99ad-84e7f7119dcc",
+      "name": "Finance Close Utilization QBR",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3242f34f-1f1f-4695-9722-fdf3548a6f5f",
+      "name": "Finance Close Utilization QBR",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "fce08adf-43ca-499e-a2b2-f887438b01c3",
+      "name": "Finance Close Utilization Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3b2e14fe-726e-4607-b496-ec17f3a9971d",
+      "name": "Finance Close Utilization Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "96d2377e-dc4c-4060-ad70-b3b2ea009d2d",
+      "name": "Finance Close Review All Hands Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6f0a308f-afdb-439b-a8cf-70817ed7c565",
+      "name": "Finance Close Review All Hands Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f2864a63-5704-4be4-9869-02a05b216154",
+      "name": "Finance Close Performance Executive",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1470b7b4-e29d-47f7-bc7f-24386e4279b5",
+      "name": "Finance Close Performance Executive",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c8183395-664a-4849-81c4-15c42905edb9",
+      "name": "Finance Close Health Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ee54193f-20ee-44c2-ab13-6cbafea07d51",
+      "name": "Finance Close Health Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "071ea717-2774-4513-8312-fda32b526b47",
+      "name": "Finance Close Utilization Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7b1539b9-cb26-4984-907d-868bf3ebf19e",
+      "name": "Finance Close Utilization Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c333f325-2750-48ad-89a1-982124018231",
+      "name": "Finance Close Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2127a865-0ae2-477b-bf5f-2335932399ae",
+      "name": "Finance Close Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ce66c228-8cd8-47b2-9f0b-35f757a11ee0",
+      "name": "Finance Close Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f2dc4a98-2c22-4576-a49e-c290b3d36e81",
+      "name": "Finance Close Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "478c2171-ae23-44e9-af98-dc9c61bbf194",
+      "name": "Finance FP&A Review Board Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c33d8572-00de-4b62-90f0-2c9a361649e9",
+      "name": "Finance FP&A Review Board Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2d673e33-1d3d-4b6a-b3d1-cbb8c4e5ff9b",
+      "name": "Finance FP&A Utilization Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e27d9920-8fb4-4cfb-9be8-f01d01440d9c",
+      "name": "Finance FP&A Utilization Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3dbff8b3-b1ed-46c4-9f0c-93bf73c7fee9",
+      "name": "Finance FP&A Pulse",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "dc509c6f-42ff-449c-b3fb-8f583da54023",
+      "name": "Finance FP&A Pulse",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f5044c39-e86f-46ee-84e8-3ad0b6d3923d",
+      "name": "Finance FP&A Pipeline",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "bd4b749d-588b-4831-b0ab-82604b39d30e",
+      "name": "Finance FP&A Pipeline",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "a346dce5-a9ab-42fb-9290-18cec62bb087",
+      "name": "Finance FP&A Pulse Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3aa471ab-1a51-4b57-b57f-86aa36372f59",
+      "name": "Finance FP&A Pulse Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "51ac17e7-0f7c-4fd8-b3fe-82d56e2e9449",
+      "name": "Finance FP&A Pulse QBR",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "44a03c7f-058a-4e6a-a7e9-b9ccf8d5caaa",
+      "name": "Finance FP&A Pulse QBR",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ff50fe36-aa8b-41df-bc52-b1fb7eb3f181",
+      "name": "Finance FP&A Pipeline Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b118a2b4-8505-4008-bffc-94916d560b28",
+      "name": "Finance FP&A Pipeline Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "46239b08-4c01-43a9-aa04-cd72501a3ef3",
+      "name": "Finance FP&A Pipeline FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7ca89ba3-e7a3-472c-bb3c-6a8889beeb4f",
+      "name": "Finance FP&A Pipeline FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "071be7b3-1c21-41db-b643-808f34f0a32b",
+      "name": "Finance FP&A Pulse FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3e258d73-98a4-4f81-9a22-94723a66e9c1",
+      "name": "Finance FP&A Pulse FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "43b7e898-3d02-4d93-b2be-399e5d63a33a",
+      "name": "Finance Shared Services Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "cc569c99-1186-43af-9f66-d5190237b120",
+      "name": "Finance Shared Services Utilization",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "037d7bf6-38cd-4c96-96b6-6788c2ca29af",
+      "name": "Finance Shared Services Health Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "5e389312-075f-4125-9b9d-f3c306927a8f",
+      "name": "Finance Shared Services Health Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6ac13f11-de47-4d0f-8b6c-b222b1a629b3",
+      "name": "Finance Shared Services Performance",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0a7283f5-bfa4-4a0f-9e80-0ddc174a514b",
+      "name": "Finance Shared Services Performance",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "dbbc0733-cba7-438c-85b8-4e62e34377c7",
+      "name": "Finance Shared Services Performance",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "cc83ee82-ab26-41cd-9211-7e8ab6493a7c",
+      "name": "Finance Shared Services Performance",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b58d6c4f-7fb7-4f84-83b9-1f08fec487ca",
+      "name": "Finance Shared Services Health",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ba81899f-c1ec-4287-ad47-6a2da6e90200",
+      "name": "Finance Shared Services Health",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "54ee22e7-d6ae-413f-9c50-185c86add660",
+      "name": "Finance Shared Services Pulse Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e5e26047-b250-4fe7-b35d-835abbc0eab0",
+      "name": "Finance Shared Services Pulse Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "9df7d821-6f92-4ee1-aa04-163af176199d",
+      "name": "Finance Shared Services Variance Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0ecb62d5-eefd-4f2f-8a0c-3eb92698bf42",
+      "name": "Finance Shared Services Variance Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "9f0d69eb-2482-4b6b-9512-de7549dba22d",
+      "name": "Finance Shared Services Pipeline",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "55dcaacb-498e-4166-b92d-f4e2f94a92c7",
+      "name": "Finance Shared Services Pipeline",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e9f6af75-ad6c-4be1-8ff1-0fff928b442a",
+      "name": "Finance Shared Services Review",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "27212f39-56ee-4bba-ae0b-4360e06d87ae",
+      "name": "Finance Shared Services Review",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2f0b8663-14e8-4274-9c26-3cd88adebad9",
+      "name": "Operations Network Insights Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "a9ef0176-fbe4-4266-ba2f-3a108ef52cc1",
+      "name": "Operations Network Insights Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c302f503-a49d-4af6-9570-5d75eea02b95",
+      "name": "Operations Network Pipeline Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7703f87b-f316-48a4-9763-aa6f6d8f7a5d",
+      "name": "Operations Network Pipeline Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c51d8c9a-f8a8-44af-a074-8979b4af3346",
+      "name": "Operations Network Pulse FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e34c3460-451e-4dc6-be1a-13052fb22a93",
+      "name": "Operations Network Pulse FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "61cb3b10-bd29-4b4d-9abe-9dce2faab56b",
+      "name": "Operations Network Review Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "a715382e-4939-4a87-85dc-f113a1616888",
+      "name": "Operations Network Review Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "404543c4-15f2-47af-b343-486203d032f0",
+      "name": "Operations Network Review v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "341cb885-a33a-4816-b8c4-aad73a25e8cc",
+      "name": "Operations Network Review v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "acea688a-7af3-4d10-bc9d-6a54294453ae",
+      "name": "Operations Network Pulse v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0ad2ab4b-f9ef-4873-b341-7d02de20649d",
+      "name": "Operations Network Pulse v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d34c053a-4b0d-4167-9f99-304809af55c2",
+      "name": "Operations Network Performance Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "8bf3ae9e-18ad-4cad-b1ab-a529f0d775d9",
+      "name": "Operations Network Performance Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "5ebc0980-ca1a-4dc6-808f-c3cd36e1dd57",
+      "name": "Operations Network Performance Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e7b1886c-8376-444e-8de0-2114a7222d23",
+      "name": "Operations Network Performance Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6141db9a-5d88-4dcd-9919-2024f15521ef",
+      "name": "Operations Network Insights Legacy FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "191d9c0a-6f71-4ad8-923e-5eb9573b49df",
+      "name": "Operations Network Insights Legacy FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c819aa72-a09d-49f4-a6d9-71b3daf5903d",
+      "name": "Operations Network Performance v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d2581f0b-ceef-4ab3-8fba-e9c2a2272146",
+      "name": "Operations Network Performance v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c2317f9c-aff2-4067-8d3c-6d0a7e4d6722",
+      "name": "Operations Network Review FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e3efcac0-e80b-4018-90a9-41d358645906",
+      "name": "Operations Network Review FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "8f76790a-a946-4443-9832-77bb5566eb33",
+      "name": "Operations Network Variance Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d99ecfca-f72c-4ca3-b78f-fec6a4a7fb90",
+      "name": "Operations Network Variance Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "53157e51-3008-49ba-ae0e-f149f1d024a0",
+      "name": "Operations Support Utilization Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "02256cca-5abb-4501-9865-675b031aad6a",
+      "name": "Operations Support Utilization Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "12540601-b9a9-4488-814c-2190fbf7a746",
+      "name": "Operations Support Review Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d0634134-7f12-4d66-a753-5080564878c0",
+      "name": "Operations Support Review Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "28129711-78ac-4d66-902f-6da8337a6d2d",
+      "name": "Operations Support Variance All Hands Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "8cf525da-3de5-4e69-a979-d34d3eef929c",
+      "name": "Operations Support Variance All Hands Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "37983ad3-bd02-42c3-a403-8a21c20e68fb",
+      "name": "Operations Support Pulse Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "48fc786c-ceec-46ce-a3ea-8581f8fe18bf",
+      "name": "Operations Support Pulse Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6d0a69b0-e436-4c81-b7a4-a721b1a1ccf7",
+      "name": "Operations Support Variance Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b8b1a937-b393-42ca-b923-7b48e4130291",
+      "name": "Operations Support Variance Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3c14f23a-a320-4178-8347-68279fb678aa",
+      "name": "Operations Support Health Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2c33f4a9-981d-4c49-b00d-833623b6c3de",
+      "name": "Operations Support Health Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e034665c-29da-4494-b5dd-1f328c00891d",
+      "name": "Operations Support Variance All Hands v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7905d140-24b0-40e2-b4fa-7b11588d7613",
+      "name": "Operations Support Variance All Hands v2",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "2669442f-d964-4cf6-84e1-6b50a728b03c",
+      "name": "Operations Support Insights Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "0a9317e1-5fc3-47f0-806e-6e06607f5f68",
+      "name": "Operations Support Insights Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b07cfb06-e2ea-43a5-ae35-55bd71ad8b74",
+      "name": "Operations Support Health Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "46fd7f7f-d392-498c-8530-4677850f5ccd",
+      "name": "Operations Support Health Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7aa60594-9bd6-4c91-9c37-74a05d17171e",
+      "name": "Operations Support Performance Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "acfb32a2-97f4-4f51-84e0-5cfc9e42df4e",
+      "name": "Operations Support Performance Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d9f5ff2b-9d9a-4752-8c2d-e1cc8e5d22f4",
+      "name": "Operations Support Review Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "a10e5f20-b644-4412-a0e2-4eadf90d2994",
+      "name": "Operations Support Review Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1ed3e67c-bdf0-4397-8845-9725b85895ea",
+      "name": "Operations Support Utilization Needs Cleanup Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6b8cce7f-00aa-403a-bf45-e70c94507cfa",
+      "name": "Operations Support Utilization Needs Cleanup Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e7b42839-2466-4ed5-9347-c7947ef6c26b",
+      "name": "Operations Field Ops Pipeline Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6704bbcb-e196-45f9-a948-f4cb778aedf9",
+      "name": "Operations Field Ops Pipeline Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1f836cce-bf15-4d4e-9ec5-6b9672a05aec",
+      "name": "Operations Field Ops Pipeline Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "5350e6bb-5955-4f32-a2fd-5ed5a9e04253",
+      "name": "Operations Field Ops Pipeline Legacy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "260d0d7b-ff89-46ad-bf2a-2b1a08413040",
+      "name": "Operations Field Ops Pipeline FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "90aad3e8-c69b-43f9-9a46-1d5977044cee",
+      "name": "Operations Field Ops Pipeline FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "cb61be49-3123-4969-9de2-76cd0959af96",
+      "name": "Operations Field Ops Review Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "760fcdf2-6ab9-479a-a4fe-b35696fe719b",
+      "name": "Operations Field Ops Review Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "206046dd-7bfe-4a79-adb8-52ecb58a4bba",
+      "name": "Operations Field Ops Variance Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b33e6765-9725-4a66-a003-3f3343270d62",
+      "name": "Operations Field Ops Variance Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "c8ace417-e0fd-4029-bbe0-7ec883b521cd",
+      "name": "Operations Field Ops Pulse All Hands Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "b492c5a9-1ce4-494d-bf39-712a86e4569b",
+      "name": "Operations Field Ops Pulse All Hands Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "9f0de12e-8d0d-4b55-931f-df6b88322d7b",
+      "name": "Operations Field Ops Utilization Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "8493c892-94eb-4a70-9c69-7c7537601c10",
+      "name": "Operations Field Ops Utilization Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3478b1af-b26f-4eda-ba45-0f7475b1a22e",
+      "name": "Operations Field Ops Pulse Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "64749fff-0a04-4d35-8b33-7ad7c37a43ca",
+      "name": "Operations Field Ops Pulse Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "cf1bffa7-1d8a-4b86-af56-672efd8992eb",
+      "name": "Operations Field Ops Insights Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "4d3af1ea-7c87-4f30-83f6-1a76c7800c9c",
+      "name": "Operations Field Ops Insights Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "27654f94-2767-4b94-9009-a0b2a0bc6236",
+      "name": "Operations Field Ops Pipeline Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "4ba7fbd9-5385-4b15-add7-797fe6cbcf1a",
+      "name": "Operations Field Ops Pipeline Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6048377d-1307-4c32-b25b-612f9e474f23",
+      "name": "Operations Field Ops Review FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "526d5a72-c97a-4257-ae36-25af42f5e206",
+      "name": "Operations Field Ops Review FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "763e536c-95ad-46a4-80f6-65840358394d",
+      "name": "Operations Field Ops Health FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f913f965-7777-41e0-af8d-41010dd85f2c",
+      "name": "Operations Field Ops Health FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "11544351-b3b1-43be-bacd-ce6539a5065a",
+      "name": "Finance Close Insights v2 Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6636c37b-6af7-4444-9c74-f841c9c76499",
+      "name": "Finance Close Insights v2 Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "660f6519-71f6-4f24-ad25-5029981ff557",
+      "name": "Finance Close Review All Hands Copy FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "146f097a-ba63-494e-8aa3-9be83da4943b",
+      "name": "Finance Close Review All Hands Copy FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "984e134d-630c-448e-85b3-cddefce39807",
+      "name": "Finance Close Utilization Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "492013f6-05dd-417b-895d-7fa40c1664ec",
+      "name": "Finance Close Utilization Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "d46f9053-65d5-4d85-ba14-a9f601b0b911",
+      "name": "Finance FP&A Pulse Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7b7c9baf-5f8b-471e-8e9d-1809da383e36",
+      "name": "Finance FP&A Pulse Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "9dadeeee-8392-4d39-a66f-c45e6d2e8b28",
+      "name": "Finance FP&A Pipeline Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "09f046bf-6c7b-428a-8e56-4415a70da11f",
+      "name": "Finance FP&A Pipeline Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "e636f94a-ac2d-4ab7-9782-006e8826de4f",
+      "name": "Finance Shared Services Pulse Legacy Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "ca71e2d7-6e91-47ae-8383-d622e133fe80",
+      "name": "Finance Shared Services Pulse Legacy Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "4e5fe4e8-c939-414b-8d48-244fb74896c3",
+      "name": "Finance Shared Services Review Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3a7eff54-6760-4115-a1f3-8e946f8f8b20",
+      "name": "Finance Shared Services Review Promoted",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "aaa55585-ed52-41b8-a12f-553fbb3dece2",
+      "name": "Operations Network Pipeline Promoted Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "a2aa7a71-6f43-4a85-9476-63304586a5a9",
+      "name": "Operations Network Pipeline Promoted Draft",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "3300ca9a-ad85-402f-b16e-d34048dfadcd",
+      "name": "Operations Network Pulse v2 FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "29b0f18d-b871-4e5e-9b87-cbc3e1052625",
+      "name": "Operations Network Pulse v2 FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7a781d90-4fba-4bd3-ab12-df2a79036497",
+      "name": "Operations Network Insights Legacy FINAL FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "6d3a8859-41c5-44af-8d05-a02d2ad81661",
+      "name": "Operations Network Insights Legacy FINAL FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "158f25c3-7c21-479d-ac1f-070d3f2cbe4e",
+      "name": "Operations Support Review Needs Cleanup FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "4f6e7c3d-866c-405d-99dd-daa0c56cbe3d",
+      "name": "Operations Support Review Needs Cleanup FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "7b07ecfe-61d1-459f-8f10-a5a07ad2a1b2",
+      "name": "Operations Support Health Needs Cleanup Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "30e7ab75-4d64-4e61-b57b-2f54046cc846",
+      "name": "Operations Support Health Needs Cleanup Copy",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "56a46af9-409c-42ad-befa-b2792a55c621",
+      "name": "Operations Field Ops Pipeline Draft FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "f5ef0218-af18-4afd-b162-e8163d2b1643",
+      "name": "Operations Field Ops Pipeline Draft FINAL",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "8118982c-1934-4665-a5fc-bf8afc01c9e8",
+      "name": "Operations Field Ops Pipeline FINAL Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "9b790947-f886-4886-b3e2-bc45264068ce",
+      "name": "Operations Field Ops Pipeline FINAL Temp",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "1b4cd0f3-b44e-4d67-b8a4-2d283b06724f",
+      "name": "Operations Field Ops Variance Needs Cleanup Needs Cleanup",
+      "platform": "powerbi"
+    },
+    {
+      "action": "create",
+      "external_id": "457343d2-ebfe-44a4-982a-124d86416d6b",
+      "name": "Operations Field Ops Variance Needs Cleanup Needs Cleanup",
+      "platform": "powerbi"
+    }
+  ],
+  "manifest_name": "enterprise-sandbox",
+  "objects": [
+    {
+      "domain": "Finance",
+      "external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance Close North America",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Close",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance Close EMEA",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Close",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance FP&A EMEA",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "FP&A",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance FP&A LATAM",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "FP&A",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance Shared Services LATAM",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Shared Services",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Finance Shared Services Ops",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Shared Services",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Network North America",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Network",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Network EMEA",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Network",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Network LATAM",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Network",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Support EMEA",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Support",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Support LATAM",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Support",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7b67adc8-2cde-4aaa-a0b8-dea08722a436",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Support Ops",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Support",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Field Ops LATAM",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Field Ops",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Field Ops Ops",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Field Ops",
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "kind": "workspace",
+      "metadata": {},
+      "name": "DZ-SBX Operations Field Ops Self-Service",
+      "parent_external_id": null,
+      "platform": "powerbi",
+      "source_ref": null,
+      "tags": [],
+      "team": "Field Ops",
+      "template_family": null
+    },
+    {
+      "domain": "Finance",
+      "external_id": "0b22514a-af30-4417-9413-98cc04425dde",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Insights v2",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "7f7a8662-661d-49c9-8c5f-8f99b3949f96",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Insights v2",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "b19de203-753a-431c-99ad-84e7f7119dcc",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization QBR",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3242f34f-1f1f-4695-9722-fdf3548a6f5f",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization QBR",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "fce08adf-43ca-499e-a2b2-f887438b01c3",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization Temp",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3b2e14fe-726e-4607-b496-ec17f3a9971d",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization Temp",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "96d2377e-dc4c-4060-ad70-b3b2ea009d2d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "6f0a308f-afdb-439b-a8cf-70817ed7c565",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "f2864a63-5704-4be4-9869-02a05b216154",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Performance Executive",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "1470b7b4-e29d-47f7-bc7f-24386e4279b5",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Performance Executive",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "c8183395-664a-4849-81c4-15c42905edb9",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Health Temp",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "ee54193f-20ee-44c2-ab13-6cbafea07d51",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Health Temp",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "071ea717-2774-4513-8312-fda32b526b47",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization Copy",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "7b1539b9-cb26-4984-907d-868bf3ebf19e",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization Copy",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "c333f325-2750-48ad-89a1-982124018231",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "2127a865-0ae2-477b-bf5f-2335932399ae",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "ce66c228-8cd8-47b2-9f0b-35f757a11ee0",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "f2dc4a98-2c22-4576-a49e-c290b3d36e81",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization",
+      "parent_external_id": "79fc7340-d58e-403b-94ee-361e10c421ed",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "478c2171-ae23-44e9-af98-dc9c61bbf194",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Review Board Draft",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy",
+        "shadow",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "c33d8572-00de-4b62-90f0-2c9a361649e9",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Review Board Draft",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy",
+        "shadow",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "2d673e33-1d3d-4b6a-b3d1-cbb8c4e5ff9b",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Utilization Copy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "e27d9920-8fb4-4cfb-9be8-f01d01440d9c",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Utilization Copy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3dbff8b3-b1ed-46c4-9f0c-93bf73c7fee9",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pulse",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "dc509c6f-42ff-449c-b3fb-8f583da54023",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pulse",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "f5044c39-e86f-46ee-84e8-3ad0b6d3923d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "bd4b749d-588b-4831-b0ab-82604b39d30e",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "a346dce5-a9ab-42fb-9290-18cec62bb087",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pulse Legacy",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3aa471ab-1a51-4b57-b57f-86aa36372f59",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pulse Legacy",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "51ac17e7-0f7c-4fd8-b3fe-82d56e2e9449",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pulse QBR",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "executive",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "44a03c7f-058a-4e6a-a7e9-b9ccf8d5caaa",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pulse QBR",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "executive",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "ff50fe36-aa8b-41df-bc52-b1fb7eb3f181",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Legacy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "b118a2b4-8505-4008-bffc-94916d560b28",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Legacy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "46239b08-4c01-43a9-aa04-cd72501a3ef3",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline FINAL",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "high-visibility",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "7ca89ba3-e7a3-472c-bb3c-6a8889beeb4f",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline FINAL",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "high-visibility",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "071be7b3-1c21-41db-b643-808f34f0a32b",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pulse FINAL",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3e258d73-98a4-4f81-9a22-94723a66e9c1",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pulse FINAL",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "43b7e898-3d02-4d93-b2be-399e5d63a33a",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Utilization",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "cc569c99-1186-43af-9f66-d5190237b120",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Utilization",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "037d7bf6-38cd-4c96-96b6-6788c2ca29af",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Health Needs Cleanup",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "5e389312-075f-4125-9b9d-f3c306927a8f",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Health Needs Cleanup",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "6ac13f11-de47-4d0f-8b6c-b222b1a629b3",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Performance",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "0a7283f5-bfa4-4a0f-9e80-0ddc174a514b",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Performance",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "dbbc0733-cba7-438c-85b8-4e62e34377c7",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Performance",
+      "parent_external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "cc83ee82-ab26-41cd-9211-7e8ab6493a7c",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Performance",
+      "parent_external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "b58d6c4f-7fb7-4f84-83b9-1f08fec487ca",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Health",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "ba81899f-c1ec-4287-ad47-6a2da6e90200",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Health",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "54ee22e7-d6ae-413f-9c50-185c86add660",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse Legacy",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "e5e26047-b250-4fe7-b35d-835abbc0eab0",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse Legacy",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "9df7d821-6f92-4ee1-aa04-163af176199d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Variance Needs Cleanup",
+      "parent_external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "0ecb62d5-eefd-4f2f-8a0c-3eb92698bf42",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Variance Needs Cleanup",
+      "parent_external_id": "c2616ef3-d002-4e4d-8fee-34a1e8183d3b",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "9f0d69eb-2482-4b6b-9512-de7549dba22d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Pipeline",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "55dcaacb-498e-4166-b92d-f4e2f94a92c7",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Pipeline",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "e9f6af75-ad6c-4be1-8ff1-0fff928b442a",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Review",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "27212f39-56ee-4bba-ae0b-4360e06d87ae",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Review",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "2f0b8663-14e8-4274-9c26-3cd88adebad9",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "a9ef0176-fbe4-4266-ba2f-3a108ef52cc1",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c302f503-a49d-4af6-9570-5d75eea02b95",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Pipeline Promoted",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7703f87b-f316-48a4-9763-aa6f6d8f7a5d",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Pipeline Promoted",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c51d8c9a-f8a8-44af-a074-8979b4af3346",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Pulse FINAL",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e34c3460-451e-4dc6-be1a-13052fb22a93",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Pulse FINAL",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "61cb3b10-bd29-4b4d-9abe-9dce2faab56b",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Review Temp",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "a715382e-4939-4a87-85dc-f113a1616888",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Review Temp",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "404543c4-15f2-47af-b343-486203d032f0",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Review v2",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "341cb885-a33a-4816-b8c4-aad73a25e8cc",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Review v2",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "acea688a-7af3-4d10-bc9d-6a54294453ae",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Pulse v2",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "0ad2ab4b-f9ef-4873-b341-7d02de20649d",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Pulse v2",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "d34c053a-4b0d-4167-9f99-304809af55c2",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Performance Legacy",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "8bf3ae9e-18ad-4cad-b1ab-a529f0d775d9",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Performance Legacy",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "5ebc0980-ca1a-4dc6-808f-c3cd36e1dd57",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Performance Draft",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e7b1886c-8376-444e-8de0-2114a7222d23",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Performance Draft",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6141db9a-5d88-4dcd-9919-2024f15521ef",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "191d9c0a-6f71-4ad8-923e-5eb9573b49df",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c819aa72-a09d-49f4-a6d9-71b3daf5903d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Performance v2",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "d2581f0b-ceef-4ab3-8fba-e9c2a2272146",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Performance v2",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c2317f9c-aff2-4067-8d3c-6d0a7e4d6722",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Review FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e3efcac0-e80b-4018-90a9-41d358645906",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Review FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "8f76790a-a946-4443-9832-77bb5566eb33",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Variance Promoted",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "d99ecfca-f72c-4ca3-b78f-fec6a4a7fb90",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Variance Promoted",
+      "parent_external_id": "1fa27ee9-5664-46c9-8bf7-370fc282349c",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "53157e51-3008-49ba-ae0e-f149f1d024a0",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Utilization Needs Cleanup",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "02256cca-5abb-4501-9865-675b031aad6a",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Utilization Needs Cleanup",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "12540601-b9a9-4488-814c-2190fbf7a746",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Review Needs Cleanup",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "d0634134-7f12-4d66-a753-5080564878c0",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Review Needs Cleanup",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "28129711-78ac-4d66-902f-6da8337a6d2d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Variance All Hands Legacy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "executive",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "8cf525da-3de5-4e69-a979-d34d3eef929c",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Variance All Hands Legacy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "executive",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "37983ad3-bd02-42c3-a403-8a21c20e68fb",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Pulse Draft",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "48fc786c-ceec-46ce-a3ea-8581f8fe18bf",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Pulse Draft",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6d0a69b0-e436-4c81-b7a4-a721b1a1ccf7",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Variance Copy",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b8b1a937-b393-42ca-b923-7b48e4130291",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Variance Copy",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "3c14f23a-a320-4178-8347-68279fb678aa",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Health Needs Cleanup",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "2c33f4a9-981d-4c49-b00d-833623b6c3de",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Health Needs Cleanup",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e034665c-29da-4494-b5dd-1f328c00891d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Variance All Hands v2",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "executive",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7905d140-24b0-40e2-b4fa-7b11588d7613",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Variance All Hands v2",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "executive",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "2669442f-d964-4cf6-84e1-6b50a728b03c",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Insights Promoted",
+      "parent_external_id": "7b67adc8-2cde-4aaa-a0b8-dea08722a436",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "0a9317e1-5fc3-47f0-806e-6e06607f5f68",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Insights Promoted",
+      "parent_external_id": "7b67adc8-2cde-4aaa-a0b8-dea08722a436",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b07cfb06-e2ea-43a5-ae35-55bd71ad8b74",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Health Copy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "46fd7f7f-d392-498c-8530-4677850f5ccd",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Health Copy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7aa60594-9bd6-4c91-9c37-74a05d17171e",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Performance Temp",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "acfb32a2-97f4-4f51-84e0-5cfc9e42df4e",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Performance Temp",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "d9f5ff2b-9d9a-4752-8c2d-e1cc8e5d22f4",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Review Copy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "a10e5f20-b644-4412-a0e2-4eadf90d2994",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Review Copy",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "1ed3e67c-bdf0-4397-8845-9725b85895ea",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Utilization Needs Cleanup Draft",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6b8cce7f-00aa-403a-bf45-e70c94507cfa",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Utilization Needs Cleanup Draft",
+      "parent_external_id": "0be8a35a-b72f-404e-ae52-06a4c1445834",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e7b42839-2466-4ed5-9347-c7947ef6c26b",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Draft",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6704bbcb-e196-45f9-a948-f4cb778aedf9",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Draft",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "1f836cce-bf15-4d4e-9ec5-6b9672a05aec",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Legacy",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "5350e6bb-5955-4f32-a2fd-5ed5a9e04253",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Legacy",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "260d0d7b-ff89-46ad-bf2a-2b1a08413040",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline FINAL",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "90aad3e8-c69b-43f9-9a46-1d5977044cee",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline FINAL",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "cb61be49-3123-4969-9de2-76cd0959af96",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Review Needs Cleanup",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "760fcdf2-6ab9-479a-a4fe-b35696fe719b",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Review Needs Cleanup",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "206046dd-7bfe-4a79-adb8-52ecb58a4bba",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Variance Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b33e6765-9725-4a66-a003-3f3343270d62",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Variance Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c8ace417-e0fd-4029-bbe0-7ec883b521cd",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pulse All Hands Promoted",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b492c5a9-1ce4-494d-bf39-712a86e4569b",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pulse All Hands Promoted",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "executive",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "9f0de12e-8d0d-4b55-931f-df6b88322d7b",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Utilization Needs Cleanup",
+      "parent_external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "8493c892-94eb-4a70-9c69-7c7537601c10",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Utilization Needs Cleanup",
+      "parent_external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "3478b1af-b26f-4eda-ba45-0f7475b1a22e",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pulse Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "64749fff-0a04-4d35-8b33-7ad7c37a43ca",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pulse Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "cf1bffa7-1d8a-4b86-af56-672efd8992eb",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Insights Draft",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "4d3af1ea-7c87-4f30-83f6-1a76c7800c9c",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Insights Draft",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "27654f94-2767-4b94-9009-a0b2a0bc6236",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Needs Cleanup",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "4ba7fbd9-5385-4b15-add7-797fe6cbcf1a",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Needs Cleanup",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6048377d-1307-4c32-b25b-612f9e474f23",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Review FINAL",
+      "parent_external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "526d5a72-c97a-4257-ae36-25af42f5e206",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Review FINAL",
+      "parent_external_id": "ad116297-abcc-495c-8ca7-5e85246b3c5e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "763e536c-95ad-46a4-80f6-65840358394d",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Health FINAL",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "f913f965-7777-41e0-af8d-41010dd85f2c",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Health FINAL",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "11544351-b3b1-43be-bacd-ce6539a5065a",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Insights v2 Promoted",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "6636c37b-6af7-4444-9c74-f841c9c76499",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Insights v2 Promoted",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "660f6519-71f6-4f24-ad25-5029981ff557",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy FINAL",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "146f097a-ba63-494e-8aa3-9be83da4943b",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy FINAL",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "executive",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "984e134d-630c-448e-85b3-cddefce39807",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Close Utilization Promoted",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "492013f6-05dd-417b-895d-7fa40c1664ec",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Close Utilization Promoted",
+      "parent_external_id": "90a9a977-b322-4fa8-aba9-0f4e0b8fda7a",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "Close",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "d46f9053-65d5-4d85-ba14-a9f601b0b911",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pulse Needs Cleanup",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "7b7c9baf-5f8b-471e-8e9d-1809da383e36",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pulse Needs Cleanup",
+      "parent_external_id": "f00ddb11-1a29-43eb-981e-b990deda766f",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "9dadeeee-8392-4d39-a66f-c45e6d2e8b28",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Copy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "09f046bf-6c7b-428a-8e56-4415a70da11f",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Copy",
+      "parent_external_id": "fc1d7d46-22aa-4b8b-bdc2-8e45f5a4cb42",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "FP&A",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "e636f94a-ac2d-4ab7-9782-006e8826de4f",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse Legacy Promoted",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "ca71e2d7-6e91-47ae-8383-d622e133fe80",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse Legacy Promoted",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "managed",
+        "refresh-heavy",
+        "shadow"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "4e5fe4e8-c939-414b-8d48-244fb74896c3",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Finance Shared Services Review Promoted",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "3a7eff54-6760-4115-a1f3-8e946f8f8b20",
+      "kind": "report",
+      "metadata": {},
+      "name": "Finance Shared Services Review Promoted",
+      "parent_external_id": "145db7f0-4aca-4105-a0fe-2595bc0eac80",
+      "platform": "powerbi",
+      "source_ref": "snowflake_finance",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "managed",
+        "refresh-heavy",
+        "stale"
+      ],
+      "team": "Shared Services",
+      "template_family": "finance-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "aaa55585-ed52-41b8-a12f-553fbb3dece2",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Pipeline Promoted Draft",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "a2aa7a71-6f43-4a85-9476-63304586a5a9",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Pipeline Promoted Draft",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "3300ca9a-ad85-402f-b16e-d34048dfadcd",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Pulse v2 FINAL",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "29b0f18d-b871-4e5e-9b87-cbc3e1052625",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Pulse v2 FINAL",
+      "parent_external_id": "70246928-415e-4d26-b999-bc46783f5f5f",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7a781d90-4fba-4bd3-ab12-df2a79036497",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy FINAL FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6d3a8859-41c5-44af-8d05-a02d2ad81661",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Network Insights Legacy FINAL FINAL",
+      "parent_external_id": "e40fc61b-95dc-4b15-8c37-5d278b7c412a",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Network",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "158f25c3-7c21-479d-ac1f-070d3f2cbe4e",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Review Needs Cleanup FINAL",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "4f6e7c3d-866c-405d-99dd-daa0c56cbe3d",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Review Needs Cleanup FINAL",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "7b07ecfe-61d1-459f-8f10-a5a07ad2a1b2",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Support Health Needs Cleanup Copy",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "30e7ab75-4d64-4e61-b57b-2f54046cc846",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Support Health Needs Cleanup Copy",
+      "parent_external_id": "02a33f6f-e2b8-47fd-97b6-d7919f00ad0e",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "high-visibility",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Support",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "56a46af9-409c-42ad-befa-b2792a55c621",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Draft FINAL",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "f5ef0218-af18-4afd-b162-e8163d2b1643",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline Draft FINAL",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "8118982c-1934-4665-a5fc-bf8afc01c9e8",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline FINAL Temp",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "9b790947-f886-4886-b3e2-bc45264068ce",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Pipeline FINAL Temp",
+      "parent_external_id": "1971f4cc-2eb9-4fd6-899c-de0008fb18a6",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow",
+        "stale"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "1b4cd0f3-b44e-4d67-b8a4-2d283b06724f",
+      "kind": "dataset",
+      "metadata": {},
+      "name": "Operations Field Ops Variance Needs Cleanup Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "457343d2-ebfe-44a4-982a-124d86416d6b",
+      "kind": "report",
+      "metadata": {},
+      "name": "Operations Field Ops Variance Needs Cleanup Needs Cleanup",
+      "parent_external_id": "2690a02a-ce07-4955-ad9d-a1d12fc520e2",
+      "platform": "powerbi",
+      "source_ref": "postgres_ops",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "long-refresh",
+        "shadow"
+      ],
+      "team": "Field Ops",
+      "template_family": "operations-powerbi-pack"
+    }
+  ],
+  "state_version": 1
+}

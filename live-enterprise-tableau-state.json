@@ -1,0 +1,621 @@
+{
+  "events": [
+    {
+      "action": "create",
+      "external_id": "973158b5-1b54-4dd5-ad15-c4683182929a",
+      "name": "Operations Network Performance Promoted",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "e162c7bb-da6c-430b-96b0-33818fc1204d",
+      "name": "Operations Network Performance",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "62915c4f-9b0b-4046-91c6-38fb14292e24",
+      "name": "Operations Network Pipeline Copy",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "6f47f9b3-1107-43aa-bdbf-0e13cf0b5d72",
+      "name": "Operations Network Pipeline Board",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "f1f6fbfe-2b87-4e34-b454-245983eb4003",
+      "name": "Operations Support Performance",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "c686810c-79c4-4c7c-a56c-fc526d61fd34",
+      "name": "Operations Support Pipeline Promoted",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "b19e720f-0604-48d8-a824-9d683dd0b85c",
+      "name": "Operations Support Variance",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "08515f3f-abd5-4e20-81de-cb0e5be75a91",
+      "name": "Operations Field Ops Utilization",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "b6975fa8-dbeb-41e7-8c31-47a2f6b32c77",
+      "name": "Operations Field Ops Insights",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "13bd621e-ad02-47cd-9c71-fa293ae673a5",
+      "name": "Operations Field Ops Review",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "6f2ab55d-913e-4e3a-ba63-dbf50c59d1a9",
+      "name": "Finance Close Review All Hands Copy Copy",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "0e39cfc2-c2b0-4f39-bf7b-e878dda1a558",
+      "name": "Finance FP&A Pipeline Board v2",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "338d2456-a3a0-4186-b518-38c3407f0e94",
+      "name": "Finance Shared Services Pulse All Hands Needs Cleanup",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "eb479ace-57fe-4216-a113-44098ecf0e82",
+      "name": "Operations Network Pipeline Copy FINAL",
+      "platform": "tableau"
+    },
+    {
+      "action": "create",
+      "external_id": "0611aac4-ac4f-4278-978d-e4832397e386",
+      "name": "Operations Support Pipeline Promoted FINAL",
+      "platform": "tableau"
+    }
+  ],
+  "manifest_name": "enterprise-sandbox",
+  "objects": [
+    {
+      "domain": null,
+      "external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance",
+      "parent_external_id": null,
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "89bcbf11-f12c-4b14-865b-e6bf5ecbb3a7",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / Close North America",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "04a38a74-d933-4d74-8095-9b4dfb7a4d84",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / Close EMEA",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "342a7e70-3624-4a2c-862b-1602116bfac1",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / FP&A EMEA",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "c1fab63b-f6e3-4213-b6ed-ed45743d056a",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / FP&A LATAM",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "dd05bfae-9690-4799-937c-6fe7b1bc9a91",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / Shared Services LATAM",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "0a54b7d5-99e4-4c58-94d9-95966a14202a",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Finance / Shared Services Ops",
+      "parent_external_id": "91e57ee3-1087-4587-a2f0-57a9d6db0aa8",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "619a2c82-d962-426d-959a-9806edfe4e81",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Operations",
+      "parent_external_id": null,
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Operations / Network North America",
+      "parent_external_id": "619a2c82-d962-426d-959a-9806edfe4e81",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "63d1f9c6-5978-4999-95ff-4dc5a493578a",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Operations / Support EMEA",
+      "parent_external_id": "619a2c82-d962-426d-959a-9806edfe4e81",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "83f5c2e6-6278-49f3-a887-a6b778ebaa36",
+      "kind": "project",
+      "metadata": {},
+      "name": "DZ-SBX Operations / Field Ops LATAM",
+      "parent_external_id": "619a2c82-d962-426d-959a-9806edfe4e81",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "ea20bf80-a648-4c16-9c73-9451352cfd3d",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy",
+      "parent_external_id": "89bcbf11-f12c-4b14-865b-e6bf5ecbb3a7",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "bd6cb388-e4ef-45b3-ae2c-5cd6c39c3d64",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Close Performance Executive",
+      "parent_external_id": "89bcbf11-f12c-4b14-865b-e6bf5ecbb3a7",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "13dc9306-f83f-413f-8ba7-5fbbf5cc64a7",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Close Health Board",
+      "parent_external_id": "04a38a74-d933-4d74-8095-9b4dfb7a4d84",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "5175d04f-9ee1-4a5f-ad68-55cbe6e3f1dc",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance FP&A Insights All Hands",
+      "parent_external_id": "c1fab63b-f6e3-4213-b6ed-ed45743d056a",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "edac2ee5-6e85-4a20-85d9-3968b2df4805",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Board",
+      "parent_external_id": "342a7e70-3624-4a2c-862b-1602116bfac1",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "6c205c72-c51c-4d66-b63e-5bfe73ad7db4",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance FP&A Performance All Hands Needs Cleanup",
+      "parent_external_id": "342a7e70-3624-4a2c-862b-1602116bfac1",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "9c6618e6-3993-4cdb-bc90-f1e0051e9b27",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Shared Services Pipeline QBR",
+      "parent_external_id": "dd05bfae-9690-4799-937c-6fe7b1bc9a91",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "dff70116-fdd5-415f-9783-63309a580b44",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Shared Services Variance QBR",
+      "parent_external_id": "dd05bfae-9690-4799-937c-6fe7b1bc9a91",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": null,
+      "external_id": "c5580bca-076f-456c-a666-e425c1f988d6",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse All Hands",
+      "parent_external_id": "0a54b7d5-99e4-4c58-94d9-95966a14202a",
+      "platform": "tableau",
+      "source_ref": null,
+      "tags": [],
+      "team": null,
+      "template_family": null
+    },
+    {
+      "domain": "Operations",
+      "external_id": "973158b5-1b54-4dd5-ad15-c4683182929a",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Network Performance Promoted",
+      "parent_external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "shadow",
+        "uncertified"
+      ],
+      "team": "Network",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "e162c7bb-da6c-430b-96b0-33818fc1204d",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Network Performance",
+      "parent_external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "stale",
+        "uncertified"
+      ],
+      "team": "Network",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "62915c4f-9b0b-4046-91c6-38fb14292e24",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Network Pipeline Copy",
+      "parent_external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "duplicate-prone",
+        "extract",
+        "shadow",
+        "uncertified"
+      ],
+      "team": "Network",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "6f47f9b3-1107-43aa-bdbf-0e13cf0b5d72",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Network Pipeline Board",
+      "parent_external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "executive",
+        "extract",
+        "uncertified"
+      ],
+      "team": "Network",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "f1f6fbfe-2b87-4e34-b454-245983eb4003",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Support Performance",
+      "parent_external_id": "63d1f9c6-5978-4999-95ff-4dc5a493578a",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "stale",
+        "uncertified"
+      ],
+      "team": "Support",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "c686810c-79c4-4c7c-a56c-fc526d61fd34",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Support Pipeline Promoted",
+      "parent_external_id": "63d1f9c6-5978-4999-95ff-4dc5a493578a",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "duplicate-prone",
+        "extract",
+        "shadow",
+        "uncertified"
+      ],
+      "team": "Support",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b19e720f-0604-48d8-a824-9d683dd0b85c",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Support Variance",
+      "parent_external_id": "63d1f9c6-5978-4999-95ff-4dc5a493578a",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "uncertified"
+      ],
+      "team": "Support",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "08515f3f-abd5-4e20-81de-cb0e5be75a91",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Field Ops Utilization",
+      "parent_external_id": "83f5c2e6-6278-49f3-a887-a6b778ebaa36",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "uncertified"
+      ],
+      "team": "Field Ops",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "b6975fa8-dbeb-41e7-8c31-47a2f6b32c77",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Field Ops Insights",
+      "parent_external_id": "83f5c2e6-6278-49f3-a887-a6b778ebaa36",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "duplicate-prone",
+        "extract",
+        "uncertified"
+      ],
+      "team": "Field Ops",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "13bd621e-ad02-47cd-9c71-fa293ae673a5",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Field Ops Review",
+      "parent_external_id": "83f5c2e6-6278-49f3-a887-a6b778ebaa36",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "extract",
+        "high-visibility",
+        "stale",
+        "uncertified"
+      ],
+      "team": "Field Ops",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "6f2ab55d-913e-4e3a-ba63-dbf50c59d1a9",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Close Review All Hands Copy Copy",
+      "parent_external_id": "89bcbf11-f12c-4b14-865b-e6bf5ecbb3a7",
+      "platform": "tableau",
+      "source_ref": "crm_service",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "executive",
+        "high-visibility"
+      ],
+      "team": "Close",
+      "template_family": "executive-tableau-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "0e39cfc2-c2b0-4f39-bf7b-e878dda1a558",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance FP&A Pipeline Board v2",
+      "parent_external_id": "342a7e70-3624-4a2c-862b-1602116bfac1",
+      "platform": "tableau",
+      "source_ref": "crm_service",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "executive",
+        "high-visibility"
+      ],
+      "team": "FP&A",
+      "template_family": "executive-tableau-pack"
+    },
+    {
+      "domain": "Finance",
+      "external_id": "338d2456-a3a0-4186-b518-38c3407f0e94",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Finance Shared Services Pulse All Hands Needs Cleanup",
+      "parent_external_id": "0a54b7d5-99e4-4c58-94d9-95966a14202a",
+      "platform": "tableau",
+      "source_ref": "crm_service",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "executive",
+        "high-visibility"
+      ],
+      "team": "Shared Services",
+      "template_family": "executive-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "eb479ace-57fe-4216-a113-44098ecf0e82",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Network Pipeline Copy FINAL",
+      "parent_external_id": "431f86eb-2728-4e77-af22-070c2018dfb0",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "extract",
+        "shadow",
+        "uncertified"
+      ],
+      "team": "Network",
+      "template_family": "marketing-tableau-pack"
+    },
+    {
+      "domain": "Operations",
+      "external_id": "0611aac4-ac4f-4278-978d-e4832397e386",
+      "kind": "workbook",
+      "metadata": {},
+      "name": "Operations Support Pipeline Promoted FINAL",
+      "parent_external_id": "63d1f9c6-5978-4999-95ff-4dc5a493578a",
+      "platform": "tableau",
+      "source_ref": "s3_marketing_files",
+      "tags": [
+        "duplicate",
+        "duplicate-prone",
+        "extract",
+        "shadow",
+        "uncertified"
+      ],
+      "team": "Support",
+      "template_family": "marketing-tableau-pack"
+    }
+  ],
+  "state_version": 1
+}
