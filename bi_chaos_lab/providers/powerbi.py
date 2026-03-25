@@ -38,7 +38,7 @@ class PowerBIProvider(Provider):
             return
         self._get_token(force=True)
 
-    def seed(self, plan: SeedPlan, *, dry_run: bool) -> None:
+    def seed(self, plan: SeedPlan, *, dry_run: bool, state_path: str | None = None) -> None:
         if not self.enabled:
             return
         if not dry_run:
@@ -65,6 +65,7 @@ class PowerBIProvider(Provider):
 
         powerbi_assets = [asset for asset in plan.assets if asset.platform == self.name]
         family_map = {family.name: family for family in self.manifest.template_families if family.platform == self.name}
+        _checkpoint_counter = 0
         for asset in powerbi_assets:
             workspace = self._find_tracked("workspace", asset.container_name)
             if workspace and self._asset_exists_in_workspace(asset.asset_name, workspace.external_id):
@@ -75,23 +76,95 @@ class PowerBIProvider(Provider):
             family = family_map[asset.template_family]
             if workspace is None:
                 raise RuntimeError(f"workspace was not created: {asset.container_name}")
-            imported_ids = self._import_pbix(workspace.external_id, asset.asset_name, str(self.template_path(family.path)))
-            for kind, external_id in imported_ids.items():
-                self.state.add_or_update(
-                    TrackedObject(
-                        platform=self.name,
-                        kind=kind,
-                        name=asset.asset_name,
-                        external_id=external_id,
-                        parent_external_id=workspace.external_id,
-                        domain=asset.domain,
-                        team=asset.team,
-                        template_family=asset.template_family,
-                        source_ref=asset.source_ref,
-                        tags=list(asset.tags),
+
+            if asset.relationship_role == "base" and asset.kind == "dataset":
+                # Shared dataset: import PBIX, keep dataset, delete auto-created report
+                imported_ids = self._import_pbix(workspace.external_id, asset.asset_name, str(self.template_path(family.path)))
+                dataset_id = imported_ids.get("dataset", "")
+                if dataset_id:
+                    self.state.add_or_update(
+                        TrackedObject(
+                            platform=self.name,
+                            kind="dataset",
+                            name=asset.asset_name,
+                            external_id=dataset_id,
+                            parent_external_id=workspace.external_id,
+                            domain=asset.domain,
+                            team=asset.team,
+                            template_family=asset.template_family,
+                            source_ref=asset.source_ref,
+                            tags=list(asset.tags),
+                        )
                     )
-                )
-                self.state.record_event("create", self.name, asset.asset_name, external_id)
+                    self.state.record_event("create", self.name, asset.asset_name, dataset_id)
+                report_id = imported_ids.get("report", "")
+                if report_id:
+                    try:
+                        self._delete_report(workspace.external_id, report_id)
+                    except Exception:
+                        pass  # orphan report is harmless
+
+            elif asset.relationship_role == "dependent" and asset.depends_on:
+                # Thin report: import PBIX then rebind to shared dataset
+                base_dataset = self._find_base_dataset(asset.depends_on)
+                imported_ids = self._import_pbix(workspace.external_id, asset.asset_name, str(self.template_path(family.path)))
+                report_id = imported_ids.get("report", "")
+                orphan_dataset_id = imported_ids.get("dataset", "")
+                if report_id and base_dataset:
+                    try:
+                        self._rebind_report(workspace.external_id, report_id, base_dataset.external_id)
+                    except Exception:
+                        pass  # rebind failure is non-fatal, report still works with its own dataset
+                    linked = [base_dataset.external_id]
+                else:
+                    linked = []
+                if report_id:
+                    self.state.add_or_update(
+                        TrackedObject(
+                            platform=self.name,
+                            kind="report",
+                            name=asset.asset_name,
+                            external_id=report_id,
+                            parent_external_id=workspace.external_id,
+                            domain=asset.domain,
+                            team=asset.team,
+                            template_family=asset.template_family,
+                            source_ref=asset.source_ref,
+                            tags=list(asset.tags),
+                            linked_to=linked,
+                        )
+                    )
+                    self.state.record_event("create", self.name, asset.asset_name, report_id)
+                # Delete orphan dataset from the import (the thin report now uses the shared one)
+                if orphan_dataset_id and base_dataset:
+                    try:
+                        self._delete_dataset(workspace.external_id, orphan_dataset_id)
+                    except Exception:
+                        pass  # orphan dataset is harmless
+
+            else:
+                # Standard: import PBIX, track both dataset and report
+                imported_ids = self._import_pbix(workspace.external_id, asset.asset_name, str(self.template_path(family.path)))
+                for kind, external_id in imported_ids.items():
+                    self.state.add_or_update(
+                        TrackedObject(
+                            platform=self.name,
+                            kind=kind,
+                            name=asset.asset_name,
+                            external_id=external_id,
+                            parent_external_id=workspace.external_id,
+                            domain=asset.domain,
+                            team=asset.team,
+                            template_family=asset.template_family,
+                            source_ref=asset.source_ref,
+                            tags=list(asset.tags),
+                        )
+                    )
+                    self.state.record_event("create", self.name, asset.asset_name, external_id)
+
+            _checkpoint_counter += 1
+            if _checkpoint_counter % 20 == 0:
+                self._save_checkpoint(state_path)
 
     def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:
         if not self.enabled:
@@ -320,6 +393,38 @@ class PowerBIProvider(Provider):
             headers=self._headers(),
             body={"notifyOption": "NoNotification"},
         )
+
+    def _rebind_report(self, workspace_id: str, report_id: str, dataset_id: str) -> None:
+        request_json(
+            "POST",
+            f"{self.api_base}/groups/{workspace_id}/reports/{report_id}/Rebind",
+            headers=self._headers(),
+            body={"datasetId": dataset_id},
+        )
+
+    def _delete_report(self, workspace_id: str, report_id: str) -> None:
+        if not report_id:
+            return
+        request_json(
+            "DELETE",
+            f"{self.api_base}/groups/{workspace_id}/reports/{report_id}",
+            headers=self._headers(),
+        )
+
+    def _delete_dataset(self, workspace_id: str, dataset_id: str) -> None:
+        if not dataset_id:
+            return
+        request_json(
+            "DELETE",
+            f"{self.api_base}/groups/{workspace_id}/datasets/{dataset_id}",
+            headers=self._headers(),
+        )
+
+    def _find_base_dataset(self, base_name: str) -> TrackedObject | None:
+        for obj in self.state.find(platform=self.name, kind="dataset"):
+            if obj.name == base_name:
+                return obj
+        return None
 
     def _delete_workspace(self, workspace_id: str) -> None:
         request_json(

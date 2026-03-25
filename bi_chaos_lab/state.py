@@ -18,6 +18,7 @@ class TrackedObject:
     source_ref: str | None = None
     tags: list[str] = field(default_factory=list)
     metadata: dict[str, str] = field(default_factory=dict)
+    linked_to: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -77,6 +78,12 @@ class StateFile:
                 "external_id": external_id,
             }
         )
+
+    def find_by_external_id(self, external_id: str) -> TrackedObject | None:
+        for item in self.objects:
+            if item.external_id == external_id:
+                return item
+        return None
 
     def find(self, *, platform: str, kind: str | None = None) -> list[TrackedObject]:
         return [

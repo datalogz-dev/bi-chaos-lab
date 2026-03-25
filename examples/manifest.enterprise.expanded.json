@@ -1,0 +1,497 @@
+{
+  "name": "enterprise-sandbox",
+  "random_seed": 42,
+  "safety": {
+    "workspace_prefix": "DZ-SBX",
+    "project_prefix": "DZ-SBX",
+    "teardown_requires_prefix_match": true
+  },
+  "platforms": {
+    "powerbi": {
+      "enabled": true,
+      "tenant_id_env": "POWERBI_TENANT_ID",
+      "client_id_env": "POWERBI_CLIENT_ID",
+      "client_secret_env": "POWERBI_CLIENT_SECRET",
+      "workspace_prefix": "DZ-SBX"
+    },
+    "tableau": {
+      "enabled": true,
+      "host_name_env": "TABLEAU_HOST_NAME",
+      "token_name_env": "TABLEAU_TOKEN_NAME",
+      "token_secret_env": "TABLEAU_TOKEN_SECRET",
+      "site_name": "datalogzbiopsuseast",
+      "api_version": "3.25",
+      "project_prefix": "DZ-SBX"
+    }
+  },
+  "sources": [
+    {
+      "name": "snowflake_finance",
+      "kind": "warehouse",
+      "owner": "finance-data",
+      "connection_hint": "snowflake://finance"
+    },
+    {
+      "name": "postgres_ops",
+      "kind": "database",
+      "owner": "ops-analytics",
+      "connection_hint": "postgres://ops"
+    },
+    {
+      "name": "s3_marketing_files",
+      "kind": "file",
+      "owner": "marketing-analytics",
+      "connection_hint": "s3://marketing-sandbox"
+    },
+    {
+      "name": "crm_service",
+      "kind": "saas",
+      "owner": "revops",
+      "connection_hint": "salesforce://sandbox"
+    },
+    {
+      "name": "databricks_hr",
+      "kind": "warehouse",
+      "owner": "people-analytics",
+      "connection_hint": "databricks://hr-workspace"
+    },
+    {
+      "name": "redshift_sales",
+      "kind": "database",
+      "owner": "sales-ops",
+      "connection_hint": "redshift://sales-analytics"
+    },
+    {
+      "name": "bigquery_it",
+      "kind": "warehouse",
+      "owner": "it-data-engineering",
+      "connection_hint": "bigquery://it-ops"
+    },
+    {
+      "name": "api_customer_svc",
+      "kind": "saas",
+      "owner": "cx-analytics",
+      "connection_hint": "zendesk://sandbox"
+    },
+    {
+      "name": "sharepoint_supply_chain",
+      "kind": "file",
+      "owner": "supply-chain-ops",
+      "connection_hint": "sharepoint://supply-chain"
+    },
+    {
+      "name": "azure_sql_marketing",
+      "kind": "database",
+      "owner": "marketing-data",
+      "connection_hint": "mssql://marketing-dw"
+    }
+  ],
+  "template_families": [
+    {
+      "name": "finance-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/finance-pack.pbix",
+      "source_ref": "snowflake_finance",
+      "owners": [
+        "finops@example.com",
+        "finance-director@example.com"
+      ],
+      "mutation_tags": [
+        "managed",
+        "refresh-heavy"
+      ]
+    },
+    {
+      "name": "operations-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/operations-pack.pbix",
+      "source_ref": "postgres_ops",
+      "owners": [
+        "ops-analytics@example.com"
+      ],
+      "mutation_tags": [
+        "shadow",
+        "long-refresh"
+      ]
+    },
+    {
+      "name": "marketing-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/marketing-pack.twbx",
+      "source_ref": "s3_marketing_files",
+      "owners": [
+        "growth@example.com"
+      ],
+      "mutation_tags": [
+        "extract",
+        "uncertified"
+      ]
+    },
+    {
+      "name": "executive-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/executive-pack.twbx",
+      "source_ref": "crm_service",
+      "owners": [
+        "ceo-ops@example.com"
+      ],
+      "mutation_tags": [
+        "executive",
+        "high-visibility"
+      ]
+    },
+    {
+      "name": "hr-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/finance-pack.pbix",
+      "source_ref": "databricks_hr",
+      "owners": [
+        "people-analytics@example.com",
+        "hr-director@example.com"
+      ],
+      "mutation_tags": [
+        "managed",
+        "pii-adjacent"
+      ]
+    },
+    {
+      "name": "hr-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/executive-pack.twbx",
+      "source_ref": "databricks_hr",
+      "owners": [
+        "people-analytics@example.com",
+        "hrbp-lead@example.com"
+      ],
+      "mutation_tags": [
+        "extract",
+        "pii-adjacent"
+      ]
+    },
+    {
+      "name": "sales-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/operations-pack.pbix",
+      "source_ref": "redshift_sales",
+      "owners": [
+        "sales-ops@example.com",
+        "vp-sales@example.com"
+      ],
+      "mutation_tags": [
+        "refresh-heavy",
+        "forecast-critical"
+      ]
+    },
+    {
+      "name": "sales-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/marketing-pack.twbx",
+      "source_ref": "redshift_sales",
+      "owners": [
+        "sales-ops@example.com",
+        "revenue-intel@example.com"
+      ],
+      "mutation_tags": [
+        "uncertified",
+        "forecast-critical"
+      ]
+    },
+    {
+      "name": "it-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/finance-pack.pbix",
+      "source_ref": "bigquery_it",
+      "owners": [
+        "it-analytics@example.com"
+      ],
+      "mutation_tags": [
+        "shadow",
+        "infra-monitoring"
+      ]
+    },
+    {
+      "name": "it-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/executive-pack.twbx",
+      "source_ref": "bigquery_it",
+      "owners": [
+        "it-analytics@example.com",
+        "ciso-office@example.com"
+      ],
+      "mutation_tags": [
+        "extract",
+        "infra-monitoring"
+      ]
+    },
+    {
+      "name": "customer-svc-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/operations-pack.pbix",
+      "source_ref": "api_customer_svc",
+      "owners": [
+        "cx-analytics@example.com",
+        "support-director@example.com"
+      ],
+      "mutation_tags": [
+        "managed",
+        "sla-tracking"
+      ]
+    },
+    {
+      "name": "customer-svc-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/marketing-pack.twbx",
+      "source_ref": "api_customer_svc",
+      "owners": [
+        "cx-analytics@example.com"
+      ],
+      "mutation_tags": [
+        "uncertified",
+        "sla-tracking"
+      ]
+    },
+    {
+      "name": "supply-chain-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/operations-pack.pbix",
+      "source_ref": "sharepoint_supply_chain",
+      "owners": [
+        "supply-chain-analytics@example.com",
+        "procurement-lead@example.com"
+      ],
+      "mutation_tags": [
+        "long-refresh",
+        "file-based"
+      ]
+    },
+    {
+      "name": "supply-chain-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/executive-pack.twbx",
+      "source_ref": "sharepoint_supply_chain",
+      "owners": [
+        "supply-chain-analytics@example.com"
+      ],
+      "mutation_tags": [
+        "extract",
+        "file-based"
+      ]
+    },
+    {
+      "name": "marketing-powerbi-pack",
+      "platform": "powerbi",
+      "asset_kind": "report",
+      "path": "../templates/powerbi/finance-pack.pbix",
+      "source_ref": "azure_sql_marketing",
+      "owners": [
+        "marketing-analytics@example.com",
+        "cmo-office@example.com"
+      ],
+      "mutation_tags": [
+        "shadow",
+        "campaign-tracking"
+      ]
+    },
+    {
+      "name": "marketing-bi-tableau-pack",
+      "platform": "tableau",
+      "asset_kind": "workbook",
+      "path": "../templates/tableau/marketing-pack.twbx",
+      "source_ref": "azure_sql_marketing",
+      "owners": [
+        "marketing-analytics@example.com",
+        "demand-gen@example.com"
+      ],
+      "mutation_tags": [
+        "uncertified",
+        "campaign-tracking"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "name": "Finance",
+      "teams": [
+        "Close",
+        "FP&A",
+        "Shared Services"
+      ],
+      "powerbi_workspaces_per_team": 2,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 9,
+      "template_families": [
+        "finance-powerbi-pack",
+        "executive-tableau-pack"
+      ],
+      "executive_ratio": 0.2,
+      "shadow_ratio": 0.15,
+      "stale_ratio": 0.25,
+      "duplicate_ratio": 0.35
+    },
+    {
+      "name": "Operations",
+      "teams": [
+        "Network",
+        "Support",
+        "Field Ops"
+      ],
+      "powerbi_workspaces_per_team": 3,
+      "tableau_projects_per_team": 1,
+      "asset_multiplier": 12,
+      "template_families": [
+        "operations-powerbi-pack",
+        "marketing-tableau-pack"
+      ],
+      "executive_ratio": 0.05,
+      "shadow_ratio": 0.35,
+      "stale_ratio": 0.3,
+      "duplicate_ratio": 0.4
+    },
+    {
+      "name": "HR",
+      "teams": [
+        "Recruiting",
+        "Compensation",
+        "People Analytics",
+        "L&D"
+      ],
+      "powerbi_workspaces_per_team": 2,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 7,
+      "template_families": [
+        "hr-powerbi-pack",
+        "hr-tableau-pack"
+      ],
+      "executive_ratio": 0.15,
+      "shadow_ratio": 0.4,
+      "stale_ratio": 0.35,
+      "duplicate_ratio": 0.3
+    },
+    {
+      "name": "Sales",
+      "teams": [
+        "Enterprise",
+        "Mid-Market",
+        "Inside Sales",
+        "Sales Ops",
+        "Revenue Intelligence"
+      ],
+      "powerbi_workspaces_per_team": 3,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 10,
+      "template_families": [
+        "sales-powerbi-pack",
+        "sales-tableau-pack",
+        "executive-tableau-pack"
+      ],
+      "executive_ratio": 0.25,
+      "shadow_ratio": 0.3,
+      "stale_ratio": 0.2,
+      "duplicate_ratio": 0.45
+    },
+    {
+      "name": "IT",
+      "teams": [
+        "Infrastructure",
+        "Security",
+        "Service Desk",
+        "Data Engineering"
+      ],
+      "powerbi_workspaces_per_team": 2,
+      "tableau_projects_per_team": 1,
+      "asset_multiplier": 6,
+      "template_families": [
+        "it-powerbi-pack",
+        "it-tableau-pack"
+      ],
+      "executive_ratio": 0.1,
+      "shadow_ratio": 0.45,
+      "stale_ratio": 0.4,
+      "duplicate_ratio": 0.25
+    },
+    {
+      "name": "Customer Service",
+      "teams": [
+        "Tier 1",
+        "Tier 2",
+        "Quality",
+        "Workforce Management"
+      ],
+      "powerbi_workspaces_per_team": 2,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 8,
+      "template_families": [
+        "customer-svc-powerbi-pack",
+        "customer-svc-tableau-pack"
+      ],
+      "executive_ratio": 0.08,
+      "shadow_ratio": 0.25,
+      "stale_ratio": 0.45,
+      "duplicate_ratio": 0.35
+    },
+    {
+      "name": "Supply Chain",
+      "teams": [
+        "Procurement",
+        "Logistics",
+        "Inventory",
+        "Demand Planning"
+      ],
+      "powerbi_workspaces_per_team": 3,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 8,
+      "template_families": [
+        "supply-chain-powerbi-pack",
+        "supply-chain-tableau-pack",
+        "operations-powerbi-pack"
+      ],
+      "executive_ratio": 0.1,
+      "shadow_ratio": 0.35,
+      "stale_ratio": 0.3,
+      "duplicate_ratio": 0.4
+    },
+    {
+      "name": "Marketing",
+      "teams": [
+        "Brand",
+        "Digital",
+        "Demand Gen",
+        "Analytics",
+        "Events"
+      ],
+      "powerbi_workspaces_per_team": 2,
+      "tableau_projects_per_team": 2,
+      "asset_multiplier": 8,
+      "template_families": [
+        "marketing-powerbi-pack",
+        "marketing-bi-tableau-pack",
+        "executive-tableau-pack"
+      ],
+      "executive_ratio": 0.15,
+      "shadow_ratio": 0.3,
+      "stale_ratio": 0.2,
+      "duplicate_ratio": 0.5
+    }
+  ],
+  "scenarios": {
+    "refresh_failure_rate": 0.12,
+    "ownership_drift_rate": 0.18,
+    "export_spike_rate": 0.08,
+    "dormant_ratio": 0.3,
+    "rename_noise_rate": 0.15
+  }
+}

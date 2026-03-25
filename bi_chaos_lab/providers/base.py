@@ -20,8 +20,12 @@ class Provider(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def seed(self, plan: SeedPlan, *, dry_run: bool) -> None:
+    def seed(self, plan: SeedPlan, *, dry_run: bool, state_path: str | None = None) -> None:
         raise NotImplementedError
+
+    def _save_checkpoint(self, state_path: str | None) -> None:
+        if state_path:
+            self.state.save(state_path)
 
     @abstractmethod
     def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:

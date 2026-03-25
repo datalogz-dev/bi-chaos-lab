@@ -36,7 +36,7 @@ class TableauProvider(Provider):
             return
         self._signin(force=True)
 
-    def seed(self, plan: SeedPlan, *, dry_run: bool) -> None:
+    def seed(self, plan: SeedPlan, *, dry_run: bool, state_path: str | None = None) -> None:
         if not self.enabled:
             return
         if not dry_run:
@@ -69,6 +69,7 @@ class TableauProvider(Provider):
             self.state.record_event("create", self.name, project["name"], project_id)
 
         family_map = {family.name: family for family in self.manifest.template_families if family.platform == self.name}
+        _checkpoint_counter = 0
         for asset in [item for item in plan.assets if item.platform == self.name]:
             if dry_run:
                 self.state.record_event("would-publish", self.name, asset.asset_name, "dry-run")
@@ -79,6 +80,65 @@ class TableauProvider(Provider):
             if self._find_tracked(asset.kind, asset.asset_name, project.external_id):
                 continue
             family = family_map[asset.template_family]
+
+            if asset.relationship_role == "base" and asset.kind == "datasource":
+                # Publish standalone datasource
+                asset_id = self._publish_asset(
+                    project.external_id,
+                    asset.asset_name,
+                    "datasource",
+                    str(self.template_path(family.path)),
+                )
+                self.state.add_or_update(
+                    TrackedObject(
+                        platform=self.name,
+                        kind="datasource",
+                        name=asset.asset_name,
+                        external_id=asset_id,
+                        parent_external_id=project.external_id,
+                        domain=asset.domain,
+                        team=asset.team,
+                        template_family=asset.template_family,
+                        source_ref=asset.source_ref,
+                        tags=list(asset.tags),
+                    )
+                )
+                self.state.record_event("create", self.name, asset.asset_name, asset_id)
+                continue
+
+            if asset.relationship_role == "dependent" and asset.depends_on:
+                # Workbook connected to published datasource(s)
+                base_datasources = [
+                    obj for obj in self.state.find(platform=self.name, kind="datasource")
+                    if obj.name == asset.depends_on
+                ]
+                # Publish workbook normally (connection override is best-effort)
+                asset_id = self._publish_asset(
+                    project.external_id,
+                    asset.asset_name,
+                    family.asset_kind,
+                    str(self.template_path(family.path)),
+                )
+                linked = [ds.external_id for ds in base_datasources]
+                self.state.add_or_update(
+                    TrackedObject(
+                        platform=self.name,
+                        kind=asset.kind,
+                        name=asset.asset_name,
+                        external_id=asset_id,
+                        parent_external_id=project.external_id,
+                        domain=asset.domain,
+                        team=asset.team,
+                        template_family=asset.template_family,
+                        source_ref=asset.source_ref,
+                        tags=list(asset.tags),
+                        linked_to=linked,
+                    )
+                )
+                self.state.record_event("create", self.name, asset.asset_name, asset_id)
+                continue
+
+            # Standard: publish workbook or datasource
             asset_id = self._publish_asset(
                 project.external_id,
                 asset.asset_name,
@@ -100,6 +160,10 @@ class TableauProvider(Provider):
                 )
             )
             self.state.record_event("create", self.name, asset.asset_name, asset_id)
+
+            _checkpoint_counter += 1
+            if _checkpoint_counter % 20 == 0:
+                self._save_checkpoint(state_path)
 
     def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:
         if not self.enabled:
@@ -322,7 +386,7 @@ class TableauProvider(Provider):
             )
 
         workbooks = self._list_workbooks()
-        for asset in [item for item in plan.assets if item.platform == self.name]:
+        for asset in [item for item in plan.assets if item.platform == self.name and item.kind == "workbook"]:
             project = self._find_project(asset.container_name)
             if project is None:
                 continue
@@ -334,6 +398,28 @@ class TableauProvider(Provider):
                             kind="workbook",
                             name=asset.asset_name,
                             external_id=workbook["id"],
+                            parent_external_id=project.external_id,
+                            domain=asset.domain,
+                            team=asset.team,
+                            template_family=asset.template_family,
+                            source_ref=asset.source_ref,
+                            tags=list(asset.tags),
+                        )
+                    )
+
+        datasources = self._list_datasources()
+        for asset in [item for item in plan.assets if item.platform == self.name and item.kind == "datasource"]:
+            project = self._find_project(asset.container_name)
+            if project is None:
+                continue
+            for ds in datasources:
+                if ds.get("name") == asset.asset_name and ds.get("project_id") == project.external_id:
+                    self.state.add_or_update(
+                        TrackedObject(
+                            platform=self.name,
+                            kind="datasource",
+                            name=asset.asset_name,
+                            external_id=ds["id"],
                             parent_external_id=project.external_id,
                             domain=asset.domain,
                             team=asset.team,
@@ -361,6 +447,25 @@ class TableauProvider(Provider):
             for node in root.findall(".//{*}project")
             if node.attrib.get("name")
         }
+
+    def _list_datasources(self) -> list[dict[str, str | None]]:
+        response = self._request_with_reauth(
+            "GET",
+            f"{self._site_url()}/datasources?pageSize=1000&pageNumber=1",
+            headers={**self._headers(), "Accept": "application/xml"},
+        )
+        root = ET.fromstring(response.body)
+        datasources: list[dict[str, str | None]] = []
+        for node in root.findall(".//{*}datasource"):
+            project = node.find(".//{*}project")
+            datasources.append(
+                {
+                    "id": str(node.attrib.get("id")),
+                    "name": node.attrib.get("name"),
+                    "project_id": project.attrib.get("id") if project is not None else None,
+                }
+            )
+        return datasources
 
     def _list_workbooks(self) -> list[dict[str, str | None]]:
         response = self._request_with_reauth(

@@ -257,6 +257,41 @@ class TemplateFamily:
 
 
 @dataclass
+class RelationshipPattern:
+    name: str
+    platform: str
+    pattern_type: str
+    base_family: str
+    dependent_families: list[str]
+    fan_out: int = 2
+    ratio: float = 0.3
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "RelationshipPattern":
+        return cls(
+            name=str(data.get("name", "")).strip(),
+            platform=str(data.get("platform", "")).strip().lower(),
+            pattern_type=str(data.get("pattern_type", "")).strip(),
+            base_family=str(data.get("base_family", "")).strip(),
+            dependent_families=[
+                str(v).strip()
+                for v in _require_list(data.get("dependent_families", []), "relationship_pattern.dependent_families")
+            ],
+            fan_out=int(data.get("fan_out", 2)),
+            ratio=float(data.get("ratio", 0.3)),
+        )
+
+    def validate(self, family_names: set[str]) -> None:
+        if self.pattern_type not in {"dataset_report_chain", "datasource_workbook_fan"}:
+            raise ManifestError(f"relationship_pattern {self.name!r} has invalid pattern_type")
+        if self.base_family not in family_names:
+            raise ManifestError(f"relationship_pattern {self.name!r} references unknown base_family {self.base_family!r}")
+        for dep in self.dependent_families:
+            if dep not in family_names:
+                raise ManifestError(f"relationship_pattern {self.name!r} references unknown dependent_family {dep!r}")
+
+
+@dataclass
 class DomainConfig:
     name: str
     teams: list[str]
@@ -268,6 +303,7 @@ class DomainConfig:
     shadow_ratio: float = 0.2
     stale_ratio: float = 0.25
     duplicate_ratio: float = 0.3
+    relationship_patterns: list[RelationshipPattern] = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "DomainConfig":
@@ -284,6 +320,10 @@ class DomainConfig:
             shadow_ratio=float(data.get("shadow_ratio", 0.2)),
             stale_ratio=float(data.get("stale_ratio", 0.25)),
             duplicate_ratio=float(data.get("duplicate_ratio", 0.3)),
+            relationship_patterns=[
+                RelationshipPattern.from_dict(_require_dict(item, "relationship_pattern"))
+                for item in _require_list(data.get("relationship_patterns", []), "domain.relationship_patterns")
+            ],
         )
 
     def validate(self, family_names: set[str]) -> None:
@@ -296,6 +336,8 @@ class DomainConfig:
         for family_name in self.template_families:
             if family_name not in family_names:
                 raise ManifestError(f"domain {self.name!r} references unknown template family {family_name!r}")
+        for pattern in self.relationship_patterns:
+            pattern.validate(family_names)
 
 
 @dataclass

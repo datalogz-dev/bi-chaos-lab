@@ -3,7 +3,7 @@ from __future__ import annotations
 import random
 from dataclasses import dataclass, field
 
-from bi_chaos_lab.manifest import DomainConfig, Manifest, TemplateFamily
+from bi_chaos_lab.manifest import DomainConfig, Manifest, RelationshipPattern, TemplateFamily
 
 
 @dataclass
@@ -18,6 +18,9 @@ class AssetPlan:
     template_family: str
     source_ref: str
     tags: list[str] = field(default_factory=list)
+    depends_on: str | None = None
+    relationship_role: str | None = None
+    relationship_group: str | None = None
 
 
 @dataclass
@@ -149,6 +152,86 @@ def build_seed_plan(manifest: Manifest) -> SeedPlan:
                         ),
                         rng,
                     )
+
+    # Generate relationship chains (shared datasets, datasource fans)
+    for domain in manifest.domains:
+        domain_family_names = set(domain.template_families)
+        for pattern in domain.relationship_patterns:
+            base_family = family_map[pattern.base_family]
+            for team_index, team in enumerate(domain.teams):
+                # Rebuild container name lists for this team
+                if pattern.platform == "powerbi":
+                    container_names = [
+                        f"{manifest.safety.workspace_prefix} {domain.name} {team} {_TEAM_SUFFIXES[(team_index + idx) % len(_TEAM_SUFFIXES)]}"
+                        for idx in range(domain.powerbi_workspaces_per_team)
+                    ]
+                    container_parent = None
+                else:
+                    parent_name = f"{manifest.safety.project_prefix} {domain.name}"
+                    container_names = [
+                        f"{parent_name} / {team} {_TEAM_SUFFIXES[(team_index + idx) % len(_TEAM_SUFFIXES)]}"
+                        for idx in range(domain.tableau_projects_per_team)
+                    ]
+                    container_parent = parent_name
+
+                chain_count = max(1, int(domain.asset_multiplier * pattern.ratio))
+                for _ in range(chain_count):
+                    tags = _pick_tags(rng, domain, base_family.mutation_tags)
+                    container = rng.choice(container_names)
+                    base_title = _choose_title(rng, domain.name, team, tags)
+                    group_id = f"rel-{rng.randint(100000, 999999)}"
+
+                    _append_unique_asset(
+                        assets,
+                        AssetPlan(
+                            platform=pattern.platform,
+                            container_name=container,
+                            container_parent=container_parent if pattern.platform == "tableau" else None,
+                            asset_name=base_title,
+                            kind=base_family.asset_kind,
+                            domain=domain.name,
+                            team=team,
+                            template_family=base_family.name,
+                            source_ref=base_family.source_ref,
+                            tags=sorted(set(tags + ["shared"])),
+                            depends_on=None,
+                            relationship_role="base",
+                            relationship_group=group_id,
+                        ),
+                        rng,
+                    )
+
+                    for _dep_idx in range(pattern.fan_out):
+                        dep_family_name = rng.choice(pattern.dependent_families)
+                        dep_family = family_map[dep_family_name]
+                        dep_tags = _pick_tags(rng, domain, dep_family.mutation_tags)
+                        dep_container = rng.choice(container_names)
+                        dep_title = _choose_title(rng, domain.name, team, dep_tags)
+
+                        _append_unique_asset(
+                            assets,
+                            AssetPlan(
+                                platform=pattern.platform,
+                                container_name=dep_container,
+                                container_parent=container_parent if pattern.platform == "tableau" else None,
+                                asset_name=dep_title,
+                                kind=dep_family.asset_kind,
+                                domain=domain.name,
+                                team=team,
+                                template_family=dep_family.name,
+                                source_ref=dep_family.source_ref,
+                                tags=sorted(set(dep_tags + ["thin"])),
+                                depends_on=base_title,
+                                relationship_role="dependent",
+                                relationship_group=group_id,
+                            ),
+                            rng,
+                        )
+
+    # Ensure base assets precede dependents
+    independent = [a for a in assets if a.depends_on is None]
+    dependent = [a for a in assets if a.depends_on is not None]
+    assets = independent + dependent
 
     for plan in list(assets):
         if "duplicate-prone" in plan.tags and rng.random() < 0.5:
