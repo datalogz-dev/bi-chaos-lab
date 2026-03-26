@@ -1,16 +1,50 @@
 from __future__ import annotations
 
 import os
+import random
 import time
 import urllib.parse
 import uuid
 from dataclasses import dataclass
 
-from bi_chaos_lab.http import request_bytes, request_form, request_json
+from bi_chaos_lab.http import HTTPError, request_bytes, request_form, request_json
 from bi_chaos_lab.manifest import Manifest
 from bi_chaos_lab.providers.base import Provider
 from bi_chaos_lab.scenario_engine import AssetPlan, SeedPlan
 from bi_chaos_lab.state import StateFile, TrackedObject
+
+# -- Evolve chaos constants --------------------------------------------------
+
+_PBI_EVOLVE_SUFFIXES = [
+    "FINAL", "FINAL v2", "Copy", "Copy (2)", "DO NOT DELETE",
+    "Old", "Updated", "BACKUP", "test", "Sandbox",
+    "for Review", "DRAFT", "WIP", "Archived", "Promoted",
+]
+
+_PBI_PHANTOM_EMAILS = [
+    "svc-analytics@yourorg.com",
+    "data-migration-bot@yourorg.com",
+    "bi-consultant-ext@partner.com",
+    "intern-temp-2024@yourorg.com",
+    "powerbi-gateway-svc@yourorg.com",
+    "shared-reports-dl@yourorg.com",
+    "finance-all@yourorg.com",
+    "contractors-bi@external.com",
+    "legacy-etl-svc@yourorg.com",
+    "test-user-qa@yourorg.com",
+]
+
+_PBI_PHANTOM_ROLES = ["Admin", "Member", "Contributor", "Viewer"]
+
+_PBI_SCHEDULE_DAYS = [
+    "Monday", "Tuesday", "Wednesday", "Thursday",
+    "Friday", "Saturday", "Sunday",
+]
+
+_PBI_SCHEDULE_TIMES = [
+    "00:30", "02:00", "03:30", "04:00", "05:00",
+    "06:30", "11:00", "14:30", "17:00", "23:00", "23:30",
+]
 
 
 @dataclass
@@ -166,18 +200,143 @@ class PowerBIProvider(Provider):
             if _checkpoint_counter % 20 == 0:
                 self._save_checkpoint(state_path)
 
-    def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:
+    def evolve(self, plan: list[AssetPlan], *, dry_run: bool, state_path: str | None = None) -> None:
         if not self.enabled:
             return
+        scenarios = self.manifest.scenarios
+        rng = random.Random(self.manifest.random_seed + len(self.state.events))
+
         datasets = self.state.find(platform=self.name, kind="dataset")
-        for index, dataset in enumerate(datasets):
-            if "stale" in dataset.tags or index % 3 != 0:
+        reports = self.state.find(platform=self.name, kind="report")
+        workspaces = self.state.find(platform=self.name, kind="workspace")
+
+        # -- 1. Refresh bursts ------------------------------------------------
+        for dataset in datasets:
+            if "stale" in dataset.tags:
+                continue
+            if rng.random() >= scenarios.refresh_failure_rate:
                 continue
             if dry_run:
                 self.state.record_event("would-refresh", self.name, dataset.name, dataset.external_id)
                 continue
-            self._trigger_refresh(dataset.parent_external_id or "", dataset.external_id)
-            self.state.record_event("refresh", self.name, dataset.name, dataset.external_id)
+            try:
+                self._trigger_refresh(dataset.parent_external_id or "", dataset.external_id)
+                self.state.record_event("refresh", self.name, dataset.name, dataset.external_id)
+            except Exception:
+                self.state.record_event("refresh-failed", self.name, dataset.name, dataset.external_id)
+
+        # -- 2. Ownership drift — SP takes over datasets ----------------------
+        for dataset in datasets:
+            if rng.random() >= scenarios.ownership_drift_rate:
+                continue
+            if dry_run:
+                self.state.record_event("would-takeover", self.name, dataset.name, dataset.external_id)
+                continue
+            try:
+                self._take_over_dataset(dataset.parent_external_id or "", dataset.external_id)
+                self.state.record_event("takeover", self.name, dataset.name, dataset.external_id)
+                if "ownership-drifted" not in dataset.tags:
+                    dataset.tags.append("ownership-drifted")
+            except Exception:
+                self.state.record_event("takeover-failed", self.name, dataset.name, dataset.external_id)
+
+        # -- 3. Permission sprawl — phantom users on workspaces ---------------
+        for workspace in workspaces:
+            if rng.random() >= scenarios.permission_sprawl_rate:
+                continue
+            role = rng.choice(_PBI_PHANTOM_ROLES)
+            phantom = rng.choice(_PBI_PHANTOM_EMAILS)
+            label = f"{workspace.name} += {phantom} ({role})"
+            if dry_run:
+                self.state.record_event("would-add-user", self.name, label, workspace.external_id)
+                continue
+            try:
+                self._add_workspace_user(workspace.external_id, phantom, "User", role)
+                self.state.record_event("add-user", self.name, label, workspace.external_id)
+            except Exception:
+                self.state.record_event("add-user-failed", self.name, label, workspace.external_id)
+
+        # -- 4. Duplicate drift — clone reports with noisy names --------------
+        for report in list(reports):
+            if rng.random() >= scenarios.duplicate_drift_rate:
+                continue
+            suffix = rng.choice(_PBI_EVOLVE_SUFFIXES)
+            clone_name = f"{report.name} {suffix}"
+            if dry_run:
+                self.state.record_event("would-clone", self.name, clone_name, report.external_id)
+                continue
+            try:
+                new_id = self._clone_report(
+                    report.parent_external_id or "", report.external_id, clone_name,
+                )
+                self.state.add_or_update(TrackedObject(
+                    platform=self.name,
+                    kind="report",
+                    name=clone_name,
+                    external_id=new_id,
+                    parent_external_id=report.parent_external_id,
+                    domain=report.domain,
+                    team=report.team,
+                    template_family=report.template_family,
+                    source_ref=report.source_ref,
+                    tags=sorted(set(report.tags + ["duplicate", "evolve-clone"])),
+                ))
+                self.state.record_event("clone", self.name, clone_name, new_id)
+            except Exception:
+                self.state.record_event("clone-failed", self.name, clone_name, report.external_id)
+
+        # -- 5. Schedule chaos — weird refresh schedules ----------------------
+        for dataset in datasets:
+            if "stale" in dataset.tags:
+                continue
+            if rng.random() >= scenarios.schedule_chaos_rate:
+                continue
+            days = rng.sample(_PBI_SCHEDULE_DAYS, rng.randint(1, 7))
+            times = rng.sample(_PBI_SCHEDULE_TIMES, rng.randint(1, 4))
+            if dry_run:
+                self.state.record_event(
+                    "would-reschedule", self.name,
+                    f"{dataset.name} -> {','.join(days)} @ {','.join(sorted(times))}",
+                    dataset.external_id,
+                )
+                continue
+            try:
+                self._update_refresh_schedule(
+                    dataset.parent_external_id or "", dataset.external_id, days, times,
+                )
+                self.state.record_event("reschedule", self.name, dataset.name, dataset.external_id)
+                if "schedule-chaotic" not in dataset.tags:
+                    dataset.tags.append("schedule-chaotic")
+            except Exception:
+                self.state.record_event("reschedule-failed", self.name, dataset.name, dataset.external_id)
+
+        # -- 6. Connection drift — rebind reports to wrong datasets -----------
+        if len(datasets) > 1:
+            for report in reports:
+                if rng.random() >= scenarios.connection_drift_rate:
+                    continue
+                wrong_dataset = rng.choice(datasets)
+                if report.linked_to and wrong_dataset.external_id in report.linked_to:
+                    continue
+                label = f"{report.name} -> {wrong_dataset.name}"
+                if dry_run:
+                    self.state.record_event("would-rebind", self.name, label, report.external_id)
+                    continue
+                try:
+                    self._rebind_report(
+                        report.parent_external_id or "",
+                        report.external_id,
+                        wrong_dataset.external_id,
+                    )
+                    report.linked_to = [wrong_dataset.external_id]
+                    if "connection-drifted" not in report.tags:
+                        report.tags.append("connection-drifted")
+                    self.state.record_event("rebind", self.name, label, report.external_id)
+                except Exception:
+                    self.state.record_event("rebind-failed", self.name, label, report.external_id)
+
+        if not dry_run:
+            self._save_checkpoint(state_path)
 
     def teardown(self, *, dry_run: bool) -> None:
         if not self.enabled:
@@ -425,6 +584,57 @@ class PowerBIProvider(Provider):
             if obj.name == base_name:
                 return obj
         return None
+
+    def _clone_report(self, workspace_id: str, report_id: str, new_name: str, target_workspace_id: str | None = None) -> str:
+        body: dict[str, str] = {"name": new_name}
+        if target_workspace_id:
+            body["targetWorkspaceId"] = target_workspace_id
+        response = request_json(
+            "POST",
+            f"{self.api_base}/groups/{workspace_id}/reports/{report_id}/Clone",
+            headers=self._headers(),
+            body=body,
+        ).json()
+        return str(response["id"])
+
+    def _take_over_dataset(self, workspace_id: str, dataset_id: str) -> None:
+        if not workspace_id:
+            return
+        request_json(
+            "POST",
+            f"{self.api_base}/groups/{workspace_id}/datasets/{dataset_id}/Default.TakeOver",
+            headers=self._headers(),
+        )
+
+    def _add_workspace_user(self, workspace_id: str, identifier: str, principal_type: str, access_right: str) -> None:
+        request_json(
+            "POST",
+            f"{self.api_base}/groups/{workspace_id}/users",
+            headers=self._headers(),
+            body={
+                "identifier": identifier,
+                "principalType": principal_type,
+                "groupUserAccessRight": access_right,
+            },
+        )
+
+    def _update_refresh_schedule(self, workspace_id: str, dataset_id: str, days: list[str], times: list[str]) -> None:
+        if not workspace_id:
+            return
+        request_json(
+            "PATCH",
+            f"{self.api_base}/groups/{workspace_id}/datasets/{dataset_id}/refreshSchedule",
+            headers=self._headers(),
+            body={
+                "value": {
+                    "enabled": True,
+                    "days": days,
+                    "times": sorted(times),
+                    "localTimeZoneId": "UTC",
+                    "notifyOption": "NoNotification",
+                },
+            },
+        )
 
     def _delete_workspace(self, workspace_id: str) -> None:
         request_json(

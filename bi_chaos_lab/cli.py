@@ -86,7 +86,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "evolve":
         for provider in providers:
-            provider.evolve(seed_plan.assets, dry_run=args.dry_run)
+            provider.evolve(seed_plan.assets, dry_run=args.dry_run, state_path=args.state)
         if not args.dry_run:
             state.save(args.state)
         return 0

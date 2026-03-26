@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import mimetypes
+import random
 import uuid
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import quoteattr
@@ -12,6 +13,42 @@ from bi_chaos_lab.manifest import Manifest
 from bi_chaos_lab.providers.base import Provider
 from bi_chaos_lab.scenario_engine import AssetPlan, SeedPlan
 from bi_chaos_lab.state import StateFile, TrackedObject
+
+
+# -- Evolve chaos constants --------------------------------------------------
+
+_TAB_EVOLVE_SUFFIXES = [
+    " Review", " FINAL", " (Copy)", " OLD", " BACKUP",
+    " DO NOT USE", " v2", " test", " DRAFT", " Updated",
+    " (migrated)", " ARCHIVE", " Sandbox", " WIP", " Promoted",
+]
+
+_TAB_ROT_DESCRIPTIONS = [
+    "",
+    "TODO: update this",
+    "Ask Sarah",
+    "temp",
+    "DO NOT MODIFY",
+    "migrated from old server",
+    "needs cleanup",
+    "legacy - do not use",
+    "see Confluence",
+    "owned by data team (maybe?)",
+    "created during sprint 47 hackathon",
+    "scheduled for deprecation Q3",
+    "backup of the real one in prod",
+    "Jira ticket somewhere",
+    "not sure who owns this anymore",
+]
+
+_TAB_CHAOS_TAGS = [
+    "needs-review", "legacy", "temp", "migration",
+    "deprecated", "production", "staging", "test", "archive",
+    "Q1", "Q2", "Q3", "Q4", "2024", "2025",
+    "priority", "self-service", "certified", "uncertified",
+    "exec-visible", "one-off", "ad-hoc", "please-delete",
+    "team-shared", "draft", "poc", "external",
+]
 
 
 @dataclass
@@ -165,20 +202,131 @@ class TableauProvider(Provider):
             if _checkpoint_counter % 20 == 0:
                 self._save_checkpoint(state_path)
 
-    def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:
+    def evolve(self, plan: list[AssetPlan], *, dry_run: bool, state_path: str | None = None) -> None:
         if not self.enabled:
             return
+        scenarios = self.manifest.scenarios
+        rng = random.Random(self.manifest.random_seed + len(self.state.events))
+
         workbooks = self.state.find(platform=self.name, kind="workbook")
-        for index, workbook in enumerate(workbooks):
-            if "stale" in workbook.tags or index % 4 != 0:
+        datasources = self.state.find(platform=self.name, kind="datasource")
+        projects = self.state.find(platform=self.name, kind="project")
+
+        site_users: list[dict[str, str]] | None = None
+
+        # -- 1. Rename noise — workbooks get messy suffixes -------------------
+        for workbook in workbooks:
+            if "stale" in workbook.tags:
                 continue
-            noisy_name = f"{workbook.name} Review"
+            if rng.random() >= scenarios.rename_noise_rate:
+                continue
+            suffix = rng.choice(_TAB_EVOLVE_SUFFIXES)
+            noisy_name = f"{workbook.name}{suffix}"
             if dry_run:
                 self.state.record_event("would-rename", self.name, noisy_name, workbook.external_id)
                 continue
-            self._rename_workbook(workbook.external_id, noisy_name)
-            workbook.name = noisy_name
-            self.state.record_event("rename", self.name, noisy_name, workbook.external_id)
+            try:
+                self._update_workbook(workbook.external_id, name=noisy_name)
+                workbook.name = noisy_name
+                self.state.record_event("rename", self.name, noisy_name, workbook.external_id)
+            except Exception:
+                self.state.record_event("rename-failed", self.name, noisy_name, workbook.external_id)
+
+        # -- 2. Description rot — project descriptions decay ------------------
+        for project in projects:
+            if rng.random() >= scenarios.description_rot_rate:
+                continue
+            rot_desc = rng.choice(_TAB_ROT_DESCRIPTIONS)
+            if dry_run:
+                self.state.record_event("would-rot-description", self.name, project.name, project.external_id)
+                continue
+            try:
+                self._update_project_description(project.external_id, rot_desc)
+                self.state.record_event("rot-description", self.name, project.name, project.external_id)
+            except Exception:
+                self.state.record_event("rot-description-failed", self.name, project.name, project.external_id)
+
+        # -- 3. Tag noise — random tags accumulate on workbooks ---------------
+        for workbook in workbooks:
+            if rng.random() >= scenarios.tag_rot_rate:
+                continue
+            num_tags = rng.randint(1, 3)
+            tags = rng.sample(_TAB_CHAOS_TAGS, min(num_tags, len(_TAB_CHAOS_TAGS)))
+            label = f"{workbook.name} += {','.join(tags)}"
+            if dry_run:
+                self.state.record_event("would-add-tags", self.name, label, workbook.external_id)
+                continue
+            try:
+                self._add_workbook_tags(workbook.external_id, tags)
+                self.state.record_event("add-tags", self.name, label, workbook.external_id)
+            except Exception:
+                self.state.record_event("add-tags-failed", self.name, label, workbook.external_id)
+
+        # -- 4. Ownership drift — workbook owners change randomly -------------
+        for workbook in workbooks:
+            if rng.random() >= scenarios.ownership_drift_rate:
+                continue
+            if site_users is None:
+                try:
+                    site_users = self._list_site_users()
+                except Exception:
+                    site_users = []
+            if not site_users:
+                self.state.record_event("ownership-drift-skipped", self.name, "no site users found", "")
+                break
+            new_owner = rng.choice(site_users)
+            label = f"{workbook.name} -> {new_owner['name']}"
+            if dry_run:
+                self.state.record_event("would-change-owner", self.name, label, workbook.external_id)
+                continue
+            try:
+                self._update_workbook(workbook.external_id, owner_id=new_owner["id"])
+                if "ownership-drifted" not in workbook.tags:
+                    workbook.tags.append("ownership-drifted")
+                self.state.record_event("change-owner", self.name, label, workbook.external_id)
+            except Exception:
+                self.state.record_event("change-owner-failed", self.name, label, workbook.external_id)
+
+        # -- 5. Move workbooks between projects (connection drift) ------------
+        child_projects = [p for p in projects if p.parent_external_id]
+        if len(child_projects) > 1:
+            for workbook in workbooks:
+                if rng.random() >= scenarios.connection_drift_rate:
+                    continue
+                target = rng.choice(child_projects)
+                if target.external_id == workbook.parent_external_id:
+                    continue
+                label = f"{workbook.name} -> {target.name}"
+                if dry_run:
+                    self.state.record_event("would-move", self.name, label, workbook.external_id)
+                    continue
+                try:
+                    self._update_workbook(workbook.external_id, project_id=target.external_id)
+                    workbook.parent_external_id = target.external_id
+                    if "moved" not in workbook.tags:
+                        workbook.tags.append("moved")
+                    self.state.record_event("move", self.name, label, workbook.external_id)
+                except Exception:
+                    self.state.record_event("move-failed", self.name, label, workbook.external_id)
+
+        # -- 6. Datasource rename drift — confusing datasource names ----------
+        for datasource in datasources:
+            if rng.random() >= scenarios.duplicate_drift_rate:
+                continue
+            suffix = rng.choice(_TAB_EVOLVE_SUFFIXES)
+            noisy_name = f"{datasource.name}{suffix}"
+            if dry_run:
+                self.state.record_event("would-rename-ds", self.name, noisy_name, datasource.external_id)
+                continue
+            try:
+                self._update_datasource_name(datasource.external_id, noisy_name)
+                datasource.name = noisy_name
+                self.state.record_event("rename-ds", self.name, noisy_name, datasource.external_id)
+            except Exception:
+                self.state.record_event("rename-ds-failed", self.name, noisy_name, datasource.external_id)
+
+        if not dry_run:
+            self._save_checkpoint(state_path)
 
     def teardown(self, *, dry_run: bool) -> None:
         if not self.enabled:
@@ -333,8 +481,26 @@ class TableauProvider(Provider):
             raise RuntimeError(f"unexpected Tableau publish response for {endpoint}")
         return str(element.attrib["id"])
 
-    def _rename_workbook(self, workbook_id: str, name: str) -> None:
-        payload = f"<tsRequest><workbook name={quoteattr(name)}/></tsRequest>"
+    def _update_workbook(
+        self,
+        workbook_id: str,
+        *,
+        name: str | None = None,
+        owner_id: str | None = None,
+        project_id: str | None = None,
+    ) -> None:
+        wb_attrs = ""
+        if name:
+            wb_attrs += f" name={quoteattr(name)}"
+        children = ""
+        if owner_id:
+            children += f"<owner id={quoteattr(owner_id)}/>"
+        if project_id:
+            children += f"<project id={quoteattr(project_id)}/>"
+        if children:
+            payload = f"<tsRequest><workbook{wb_attrs}>{children}</workbook></tsRequest>"
+        else:
+            payload = f"<tsRequest><workbook{wb_attrs}/></tsRequest>"
         self._request_with_reauth(
             "PUT",
             f"{self._site_url()}/workbooks/{workbook_id}",
@@ -345,6 +511,59 @@ class TableauProvider(Provider):
             },
             body=payload.encode("utf-8"),
         )
+
+    def _update_project_description(self, project_id: str, description: str) -> None:
+        payload = f"<tsRequest><project description={quoteattr(description)}/></tsRequest>"
+        self._request_with_reauth(
+            "PUT",
+            f"{self._site_url()}/projects/{project_id}",
+            headers={
+                **self._headers(),
+                "Content-Type": "application/xml",
+                "Accept": "application/xml",
+            },
+            body=payload.encode("utf-8"),
+        )
+
+    def _add_workbook_tags(self, workbook_id: str, tags: list[str]) -> None:
+        tags_xml = "".join(f"<tag label={quoteattr(tag)}/>" for tag in tags)
+        payload = f"<tsRequest><tags>{tags_xml}</tags></tsRequest>"
+        self._request_with_reauth(
+            "PUT",
+            f"{self._site_url()}/workbooks/{workbook_id}/tags",
+            headers={
+                **self._headers(),
+                "Content-Type": "application/xml",
+                "Accept": "application/xml",
+            },
+            body=payload.encode("utf-8"),
+        )
+
+    def _update_datasource_name(self, datasource_id: str, name: str) -> None:
+        payload = f"<tsRequest><datasource name={quoteattr(name)}/></tsRequest>"
+        self._request_with_reauth(
+            "PUT",
+            f"{self._site_url()}/datasources/{datasource_id}",
+            headers={
+                **self._headers(),
+                "Content-Type": "application/xml",
+                "Accept": "application/xml",
+            },
+            body=payload.encode("utf-8"),
+        )
+
+    def _list_site_users(self) -> list[dict[str, str]]:
+        response = self._request_with_reauth(
+            "GET",
+            f"{self._site_url()}/users?pageSize=100&pageNumber=1",
+            headers={**self._headers(), "Accept": "application/xml"},
+        )
+        root = ET.fromstring(response.body)
+        return [
+            {"id": str(node.attrib.get("id")), "name": str(node.attrib.get("name", ""))}
+            for node in root.findall(".//{*}user")
+            if node.attrib.get("id")
+        ]
 
     def _delete_project(self, project_id: str) -> None:
         self._request_with_reauth(

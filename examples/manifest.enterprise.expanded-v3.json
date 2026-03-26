@@ -871,6 +871,12 @@
     "ownership_drift_rate": 0.18,
     "export_spike_rate": 0.08,
     "dormant_ratio": 0.3,
-    "rename_noise_rate": 0.15
+    "rename_noise_rate": 0.15,
+    "description_rot_rate": 0.10,
+    "permission_sprawl_rate": 0.15,
+    "connection_drift_rate": 0.05,
+    "schedule_chaos_rate": 0.10,
+    "duplicate_drift_rate": 0.08,
+    "tag_rot_rate": 0.12
   }
 }

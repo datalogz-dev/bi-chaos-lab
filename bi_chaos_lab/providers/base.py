@@ -28,7 +28,7 @@ class Provider(ABC):
             self.state.save(state_path)
 
     @abstractmethod
-    def evolve(self, plan: list[AssetPlan], *, dry_run: bool) -> None:
+    def evolve(self, plan: list[AssetPlan], *, dry_run: bool, state_path: str | None = None) -> None:
         raise NotImplementedError
 
     @abstractmethod

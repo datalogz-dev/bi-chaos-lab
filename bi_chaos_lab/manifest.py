@@ -347,6 +347,12 @@ class ScenarioConfig:
     export_spike_rate: float = 0.08
     dormant_ratio: float = 0.3
     rename_noise_rate: float = 0.15
+    description_rot_rate: float = 0.10
+    permission_sprawl_rate: float = 0.15
+    connection_drift_rate: float = 0.05
+    schedule_chaos_rate: float = 0.10
+    duplicate_drift_rate: float = 0.08
+    tag_rot_rate: float = 0.12
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "ScenarioConfig":
@@ -356,6 +362,12 @@ class ScenarioConfig:
             export_spike_rate=float(data.get("export_spike_rate", 0.08)),
             dormant_ratio=float(data.get("dormant_ratio", 0.3)),
             rename_noise_rate=float(data.get("rename_noise_rate", 0.15)),
+            description_rot_rate=float(data.get("description_rot_rate", 0.10)),
+            permission_sprawl_rate=float(data.get("permission_sprawl_rate", 0.15)),
+            connection_drift_rate=float(data.get("connection_drift_rate", 0.05)),
+            schedule_chaos_rate=float(data.get("schedule_chaos_rate", 0.10)),
+            duplicate_drift_rate=float(data.get("duplicate_drift_rate", 0.08)),
+            tag_rot_rate=float(data.get("tag_rot_rate", 0.12)),
         )
 
 
